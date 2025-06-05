@@ -132,7 +132,7 @@ export const processData: Phase[] = [
       },
       {
         id: 'creacion-opr',
-        name: 'CREACIÓN OP REFRIGERADOS, MERCANCIAS PELIGROSAS Y RO RO EXTRADIMENSIONADA',
+        name: 'CREACIÓN OP REFRIGERADOS, MERCANCIAS PELIGROSAS,  RORO, EXTRADIMENSIONADA',
         
       },
       {
