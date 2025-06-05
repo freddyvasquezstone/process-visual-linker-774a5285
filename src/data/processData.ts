@@ -28,7 +28,8 @@ export const processData: Phase[] = [
       {
         id: 'seguridad-analisis',
         name: 'SEGURIDAD - ANÁLISIS',
-        figmaLink: 'https://figma.com/seguridad'
+        pdfLink: 'https://drive.google.com/file/d/1-hBSib88wMtuKKS4B8QLJko7WA9AJ3Kp/view?usp=drive_link'
+        ///figmaLink: 'https://figma.com/seguridad'
       }
     ]
   },
@@ -80,7 +81,9 @@ export const processData: Phase[] = [
       },
       {
         id: 'lineas-negocio',
-        name: 'LÍNEAS DE NEGOCIO - RELACIÓN OP'
+        name: 'LÍNEAS DE NEGOCIO - RELACIÓN OP',
+        pdfLink:'https://drive.google.com/file/d/1rqH5WwxX68xa3Ui1gx8A3RTqpI2kBSev/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/phaRlMnfCQfymxvGhNdzcp/L%C3%ADneas-de-Negocio-Humadea?node-id=0-1&p=f&t=4TTgukClu5oBjtHG-0'
       }
     ]
   },
@@ -92,7 +95,9 @@ export const processData: Phase[] = [
     processes: [
       {
         id: 'refrigerados',
-        name: 'CREACIÓN OP REFRIGERADOS, MERCANCÍAS PELIGROSAS Y RO RO, EXTRADIMENSIONADA'
+        name: 'CREACIÓN OP REFRIGERADOS, MERCANCÍAS PELIGROSAS Y RO RO, EXTRADIMENSIONADA',
+        pdfLink: 'https://drive.google.com/file/d/16A5rBzWamUa2fdy2OCt10u4EmPh7qANY/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/uLKom2kYlZ7X4duAeOUf6y/Creaci%C3%B3n-Orden-de-Producci%C3%B3n-HUMADEA?node-id=0-1&t=gpnhuL9ZwkxTa8EP-1'
       },
       {
         id: 'comercio-exterior',
@@ -128,8 +133,7 @@ export const processData: Phase[] = [
       {
         id: 'creacion-opr',
         name: 'CREACIÓN OP REFRIGERADOS, MERCANCIAS PELIGROSAS Y RO RO EXTRADIMENSIONADA',
-        pdfLink: 'https://drive.google.com/file/d/16A5rBzWamUa2fdy2OCt10u4EmPh7qANY/view?usp=drive_link',
-        figmaLink: 'https://www.figma.com/board/uLKom2kYlZ7X4duAeOUf6y/Creaci%C3%B3n-Orden-de-Producci%C3%B3n-HUMADEA?node-id=0-1&t=gpnhuL9ZwkxTa8EP-1'
+        
       },
       {
         id: 'novedades-op',
@@ -138,8 +142,10 @@ export const processData: Phase[] = [
         figmaLink: 'https://www.figma.com/board/UAE9bV4404qRICSBipbLVy/Novedades-Orden-de-Producci%C3%B3n?t=jl9oTRqoBmGbjhyK-0'
       },
       {
-        id: 'orden-cargue',
-        name: 'ORDEN DE CARGUE'
+        id: 'orden-carguee',
+        name: 'ORDEN DE CARGUE',
+        //pdfLink: 'https://drive.google.com/file/d/1kpuejtZcxDPJdWS2G9MlAtp0F9Ki1Ckp/view?usp=drive_link',
+        //figmaLink: 'https://www.figma.com/board/UAE9bV4404qRICSBipbLVy/Novedades-Orden-de-Producci%C3%B3n?t=jl9oTRqoBmGbjhyK-0'
       },
       {
         id: 'remesa',
@@ -172,7 +178,7 @@ export const processData: Phase[] = [
       {
         id: 'seguridad-trafico',
         name: 'SEGURIDAD - TRÁFICO',
-        figmaLink: 'https://www.figma.com/board/ZStCeumbdvrJmf0SfstQ83/Seguridad-y-Trafico?node-id=4-186&t=tUvhgLW66YCAiRy5-0'
+        figmaLink: 'https://www.figma.com/board/ZStCeumbdvrJmf0SfstQ83/Seguridad-y-Trafico?node-id=0-1&t=ntrVYURgfKn1Xayl-0'
       }
     ]
   },
@@ -196,7 +202,8 @@ export const processData: Phase[] = [
       },
       {
         id: 'cartera-transportador',
-        name: 'CARTERA TRANSPORTADOR'
+        name: 'CARTERA TRANSPORTADOR',
+        pdfLink: 'https://drive.google.com/file/d/1q9tySNrgTLMiOB8CEvZX2G278IuWwbV5/view?usp=drive_link',
       }
     ]
   },
@@ -241,6 +248,10 @@ export const processData: Phase[] = [
       {
         id: 'estructura-app',
         name: 'ESTRUCTURA APP TURNPIKE'
+      }
+      {
+        id: 'turnike',
+        name: 'TURNPIKE'
       }
     ]
   }
