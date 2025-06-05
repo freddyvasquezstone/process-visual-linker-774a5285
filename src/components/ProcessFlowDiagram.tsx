@@ -3,6 +3,7 @@ import React from 'react';
 import { processData } from '../data/processData';
 import ProcessPhase from './ProcessPhase';
 import Legend from './Legend';
+import Summary from './Summary';
 
 const ProcessFlowDiagram = () => {
   return (
@@ -11,6 +12,8 @@ const ProcessFlowDiagram = () => {
         <h1 className="text-center text-slate-800 mb-8 text-4xl font-bold text-shadow">
           🚛 Diagrama de Flujo - Proceso de Transporte
         </h1>
+        
+        <Summary />
         
         {processData.map((phase, index) => (
           <React.Fragment key={phase.id}>
