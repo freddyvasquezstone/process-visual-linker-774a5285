@@ -17,7 +17,8 @@ export const processData: Phase[] = [
       {
         id: 'asociados',
         name: 'CREACIÓN DE ASOCIADOS, CONDUCTORES Y POSEEDORES',
-        pdfLink: 'https://example.com/asociados.pdf'
+        pdfLink: 'https://drive.google.com/file/d/1hX9U6sYKmxVpDQp3bEE-LRsmIUM7TKif/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/Bdc4WIArk91v49BcDsoXyD/Creaci%C3%B3n-de-un-Asociado?node-id=0-1&p=f&t=kPpSD9PrVF0Q0OFb-0'
       },
       {
         id: 'activacion',
