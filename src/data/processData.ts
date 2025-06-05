@@ -22,7 +22,8 @@ export const processData: Phase[] = [
       },
       {
         id: 'activacion',
-        name: 'ACTIVACIÓN DE VEHÍCULOS'
+        name: 'ACTIVACIÓN DE VEHÍCULOS',
+        pdfLink: 'https://drive.google.com/file/d/1UpJLJ0v8r79PbSivKvfHdqmR_dCTCRKw/view?usp=drive_link'
       },
       {
         id: 'seguridad-analisis',
@@ -40,21 +41,26 @@ export const processData: Phase[] = [
       {
         id: 'creacion-cliente',
         name: 'CREACIÓN DE CLIENTE',
-        pdfLink: 'https://example.com/cliente.pdf',
-        figmaLink: 'https://figma.com/cliente'
+        pdfLink: 'https://drive.google.com/file/d/17fhFOsycQ66PFRpenquByK2CfDsXHAIy/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/Yk7d3FBrjSF1FH5iU12L3j/Creaci%C3%B3n-de-un-Cliente-y-Activaci%C3%B3n?node-id=0-1&t=SkvrcmYqvhSetBIb-1'
       },
       {
         id: 'activacion-cliente',
-        name: 'ACTIVACIÓN DE CLIENTES'
+        name: 'ACTIVACIÓN DE CLIENTES',
+        pdfLink: 'https://drive.google.com/file/d/15tbYB_GmdzattnqrojWLZbB7QFO9XvIf/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/WkcZJsvTWhuAviNFOy9npL/Activaci%C3%B3n-Clientes-HUMADEA?node-id=0-1&t=DVlbYgYEO2IXOPgE-1'
       },
       {
         id: 'cupo-cliente',
         name: 'ASIGNACIÓN DE CUPO CLIENTES',
-        pdfLink: 'https://example.com/cupo.pdf'
+        pdfLink:'https://drive.google.com/file/d/1vAl_x_OcL72NYk8CHyidICMd7044ATET/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/74GfVbGmkYkrSZkvi1JrEe/Asignaci%C3%B3n-Cupo-Clientes?node-id=0-1&t=abKn3zFPwG7LXHxQ-1'
       },
       {
         id: 'novedades-cupo',
-        name: 'NOVEDADES CUPOS DE CLIENTES'
+        name: 'NOVEDADES CUPOS DE CLIENTES',
+        pdfLink:'https://drive.google.com/file/d/1N-d71Hu3z428oE1bLJimWiiIQmZUeOmh/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/O30JXnUaUExEHptYRfcqTY/Novedades-Cupo-de-Cliente?node-id=0-1&p=f&t=RiMP9W5iSAtrdE3b-0 '
       }
     ]
   },
@@ -66,9 +72,7 @@ export const processData: Phase[] = [
     processes: [
       {
         id: 'fletes-tarifas',
-        name: 'FLETES Y TARIFAS',
-        pdfLink: 'https://example.com/fletes.pdf',
-        figmaLink: 'https://figma.com/fletes'
+        name: 'FLETES Y TARIFAS'
       },
       {
         id: 'costos-operacionales',
@@ -93,7 +97,6 @@ export const processData: Phase[] = [
       {
         id: 'comercio-exterior',
         name: 'COMERCIO EXTERIOR',
-        figmaLink: 'https://figma.com/comercio'
       },
       {
         id: 'logistica-contenedores',
@@ -113,17 +116,26 @@ export const processData: Phase[] = [
     processes: [
       {
         id: 'enturnamiento',
-        name: 'ENTURNAMIENTO'
+        name: 'ENTURNAMIENTO',
+        figmaLink: 'https://www.figma.com/board/dsVuiJid3C4MIuo0iCRq8F/Enturnamiento---HUMAEDA?node-id=7-2246&t=hhrXbVoLnWJacgRS-0'
       },
       {
         id: 'creacion-op',
         name: 'CREACIÓN DE OP',
-        pdfLink: 'https://example.com/creacion-op.pdf',
-        figmaLink: 'https://figma.com/creacion-op'
+        pdfLink: 'https://drive.google.com/file/d/1BeY7ScJyU1yigd6SIrdtKCVBCJyWsG7e/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/uLKom2kYlZ7X4duAeOUf6y/Creaci%C3%B3n-Orden-de-Producci%C3%B3n-HUMADEA?node-id=0-1&t=gpnhuL9ZwkxTa8EP-1'
+      },
+      {
+        id: 'creacion-opr',
+        name: 'CREACIÓN OP REFRIGERADOS, MERCANCIAS PELIGROSAS Y RO RO EXTRADIMENSIONADA',
+        pdfLink: 'https://drive.google.com/file/d/16A5rBzWamUa2fdy2OCt10u4EmPh7qANY/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/uLKom2kYlZ7X4duAeOUf6y/Creaci%C3%B3n-Orden-de-Producci%C3%B3n-HUMADEA?node-id=0-1&t=gpnhuL9ZwkxTa8EP-1'
       },
       {
         id: 'novedades-op',
-        name: 'NOVEDADES OP'
+        name: 'NOVEDADES OP',
+        pdfLink: 'https://drive.google.com/file/d/1kpuejtZcxDPJdWS2G9MlAtp0F9Ki1Ckp/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/UAE9bV4404qRICSBipbLVy/Novedades-Orden-de-Producci%C3%B3n?t=jl9oTRqoBmGbjhyK-0'
       },
       {
         id: 'orden-cargue',
@@ -159,7 +171,8 @@ export const processData: Phase[] = [
       },
       {
         id: 'seguridad-trafico',
-        name: 'SEGURIDAD - TRÁFICO'
+        name: 'SEGURIDAD - TRÁFICO',
+        figmaLink: 'https://www.figma.com/board/ZStCeumbdvrJmf0SfstQ83/Seguridad-y-Trafico?node-id=4-186&t=tUvhgLW66YCAiRy5-0'
       }
     ]
   },
