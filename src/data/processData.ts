@@ -247,10 +247,10 @@ export const processData: Phase[] = [
       },
       {
         id: 'estructura-app',
-        name: 'ESTRUCTURA APP TURNPIKE'
+        name: 'ESTRUCTURA APP'
       }
       {
-        id: 'turnike',
+        id: 'turnpike',
         name: 'TURNPIKE'
       }
     ]
