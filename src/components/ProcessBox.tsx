@@ -1,6 +1,13 @@
 
 import React from 'react';
 import { Process } from '../types/process';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from './ui/dropdown-menu';
+import { ExternalLink, FileText, Figma } from 'lucide-react';
 
 interface ProcessBoxProps {
   process: Process;
@@ -10,73 +17,74 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process }) => {
   const hasAllLinks = process.pdfLink && process.figmaLink;
   const hasNoLinks = !process.pdfLink && !process.figmaLink;
   
-  const borderColor = hasAllLinks ? 'border-l-green-500' : 'border-l-yellow-500';
-  const hoverBorderColor = hasAllLinks ? 'hover:border-l-green-600' : 'hover:border-l-yellow-600';
+  const borderColor = hasAllLinks ? 'border-l-green-500' : hasNoLinks ? 'border-l-yellow-500' : 'border-l-orange-500';
+  const hoverBorderColor = hasAllLinks ? 'hover:border-l-green-600' : hasNoLinks ? 'hover:border-l-yellow-600' : 'hover:border-l-orange-600';
 
-  const handleClick = () => {
-    if (process.pdfLink) {
-      window.open(process.pdfLink, '_blank');
-    } else if (process.figmaLink) {
-      window.open(process.figmaLink, '_blank');
-    }
-  };
-
-  const handlePdfClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handlePdfClick = () => {
     if (process.pdfLink) {
       window.open(process.pdfLink, '_blank');
     }
   };
 
-  const handleFigmaClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handleFigmaClick = () => {
     if (process.figmaLink) {
       window.open(process.figmaLink, '_blank');
     }
   };
 
   return (
-    <div 
-      className={`bg-white/90 p-4 rounded-lg border-l-4 ${borderColor} ${hoverBorderColor} 
-                 transition-all duration-300 cursor-pointer hover:bg-white hover:scale-105 
-                 hover:shadow-lg group`}
-      onClick={handleClick}
-    >
-      <div className="text-sm font-medium text-gray-800 mb-3">
-        {process.name}
-      </div>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <div 
+          className={`bg-white/90 p-4 rounded-lg border-l-4 ${borderColor} ${hoverBorderColor} 
+                     transition-all duration-300 cursor-pointer hover:bg-white hover:scale-105 
+                     hover:shadow-lg group`}
+        >
+          <div className="text-sm font-medium text-gray-800 mb-3 flex items-center justify-between">
+            {process.name}
+            <ExternalLink className="h-4 w-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+          </div>
+          
+          <div className="mt-2 flex items-center justify-between">
+            <div className="flex gap-1">
+              <div className={`w-2 h-2 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+              <div className={`w-2 h-2 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+            </div>
+            <div className={`text-xs font-medium ${hasAllLinks ? 'text-green-600' : hasNoLinks ? 'text-yellow-600' : 'text-orange-600'}`}>
+              {hasAllLinks ? 'Completo' : hasNoLinks ? 'Pendiente' : 'Parcial'}
+            </div>
+          </div>
+        </div>
+      </DropdownMenuTrigger>
       
-      <div className="flex gap-2 justify-end">
+      <DropdownMenuContent className="w-48 bg-white border shadow-lg">
         {process.pdfLink && (
-          <button
+          <DropdownMenuItem 
             onClick={handlePdfClick}
-            className="px-2 py-1 bg-red-500 text-white text-xs rounded hover:bg-red-600 transition-colors"
-            title="Ver PDF"
+            className="flex items-center gap-2 cursor-pointer hover:bg-red-50"
           >
-            PDF
-          </button>
+            <FileText className="h-4 w-4 text-red-500" />
+            <span>Documentación</span>
+          </DropdownMenuItem>
         )}
+        
         {process.figmaLink && (
-          <button
+          <DropdownMenuItem 
             onClick={handleFigmaClick}
-            className="px-2 py-1 bg-purple-500 text-white text-xs rounded hover:bg-purple-600 transition-colors"
-            title="Ver Figma"
+            className="flex items-center gap-2 cursor-pointer hover:bg-purple-50"
           >
-            FIGMA
-          </button>
+            <Figma className="h-4 w-4 text-purple-500" />
+            <span>Figma</span>
+          </DropdownMenuItem>
         )}
-      </div>
-      
-      <div className="mt-2 flex items-center justify-between">
-        <div className="flex gap-1">
-          <div className={`w-2 h-2 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
-          <div className={`w-2 h-2 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
-        </div>
-        <div className={`text-xs font-medium ${hasAllLinks ? 'text-green-600' : hasNoLinks ? 'text-yellow-600' : 'text-orange-600'}`}>
-          {hasAllLinks ? 'Completo' : hasNoLinks ? 'Pendiente' : 'Parcial'}
-        </div>
-      </div>
-    </div>
+        
+        {hasNoLinks && (
+          <DropdownMenuItem disabled className="text-gray-400">
+            <span>No hay enlaces disponibles</span>
+          </DropdownMenuItem>
+        )}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 
