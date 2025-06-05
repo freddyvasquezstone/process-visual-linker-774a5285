@@ -12,7 +12,7 @@ export const processData: Phase[] = [
         id: 'vehiculos',
         name: 'CREACIÓN DE VEHÍCULOS',
         pdfLink: 'https://example.com/vehiculos.pdf',
-        figmaLink: 'https://figma.com/vehiculos'
+        //figmaLink: 'https://figma.com/vehiculos'
       },
       {
         id: 'asociados',
