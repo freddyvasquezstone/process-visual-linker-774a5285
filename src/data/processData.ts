@@ -1,3 +1,4 @@
+
 import { Phase } from '../types/process';
 
 export const processData: Phase[] = [
@@ -264,7 +265,20 @@ export const generalDiagram = {
   process: {
     id: 'diagrama-general',
     name: 'ARQUITECTURA GENERAL PROCESOS STONE',
-    pdfLink: 'https://drive.google.com/file/d/1x3CADoSWyWQs4izS3czP4u6sg6FnLsH2/view?usp=drive_link', // Se puede agregar el enlace aquí
-    figmaLink: 'https://www.figma.com/board/OpUQDOUmTwd3jJdImHC1yJ/Arquitectura-TMS-HUMADEA?node-id=0-1&p=f&t=DQVjEOe3jKb1wdDs-0' // Se puede agregar el enlace aquí
+    pdfLink: 'https://drive.google.com/file/d/1x3CADoSWyWQs4izS3czP4u6sg6FnLsH2/view?usp=drive_link',
+    figmaLink: 'https://www.figma.com/board/OpUQDOUmTwd3jJdImHC1yJ/Arquitectura-TMS-HUMADEA?node-id=0-1&p=f&t=DQVjEOe3jKb1wdDs-0'
+  }
+};
+
+export const coreBusinessDiagram = {
+  id: 'core-business-diagram',
+  title: 'ARQUITECTURA CORE DE NEGOCIOS HUMADEA',
+  icon: '🏢',
+  bgClass: 'bg-gradient-to-br from-teal-50 to-teal-100',
+  process: {
+    id: 'core-negocio',
+    name: 'ARQUITECTURA CORE DE NEGOCIOS HUMADEA',
+    // pdfLink: '', // Se pueden agregar los enlaces aquí cuando estén disponibles
+    // figmaLink: ''
   }
 };
