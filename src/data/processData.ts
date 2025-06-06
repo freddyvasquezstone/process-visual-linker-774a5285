@@ -202,7 +202,8 @@ export const processData: Phase[] = [
       {
         id: 'cartera-transportador',
         name: 'CARTERA TRANSPORTADOR',
-        pdfLink: 'https://drive.google.com/file/d/1q9tySNrgTLMiOB8CEvZX2G278IuWwbV5/view?usp=drive_link',
+        pdfLink: 'https://drive.google.com/file/d/1PoOPoLzjUBTwCUFGvKqFuaik2jgf0iAk/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/Fqm6ln3bdm714Q3ZKAkrzE/Cartera-Transportador-Humadea?node-id=5004-261&t=PKNaIYy4jP2v3O9c-0'
       }
     ]
   },
