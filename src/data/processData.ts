@@ -264,7 +264,7 @@ export const generalDiagram = {
   process: {
     id: 'diagrama-general',
     name: 'ARQUITECTURA GENERAL PROCESOS STONE',
-    pdfLink: '', // Se puede agregar el enlace aquí
+    pdfLink: 'https://drive.google.com/file/d/1x3CADoSWyWQs4izS3czP4u6sg6FnLsH2/view?usp=drive_link', // Se puede agregar el enlace aquí
     figmaLink: 'https://www.figma.com/board/OpUQDOUmTwd3jJdImHC1yJ/Arquitectura-TMS-HUMADEA?node-id=0-1&p=f&t=DQVjEOe3jKb1wdDs-0' // Se puede agregar el enlace aquí
   }
 };
