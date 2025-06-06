@@ -1,4 +1,3 @@
-
 import { Phase } from '../types/process';
 
 export const processData: Phase[] = [
@@ -256,3 +255,16 @@ export const processData: Phase[] = [
     ]
   }
 ];
+
+export const generalDiagram = {
+  id: 'general-diagram',
+  title: 'DIAGRAMA GENERAL PROCESOS STONE',
+  icon: '📊',
+  bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
+  process: {
+    id: 'diagrama-general',
+    name: 'DIAGRAMA GENERAL PROCESOS STONE',
+    pdfLink: '', // Se puede agregar el enlace aquí
+    figmaLink: '' // Se puede agregar el enlace aquí
+  }
+};

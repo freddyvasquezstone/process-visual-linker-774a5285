@@ -2,6 +2,7 @@
 import React from 'react';
 import { processData } from '../data/processData';
 import ProcessPhase from './ProcessPhase';
+import GeneralDiagram from './GeneralDiagram';
 import Legend from './Legend';
 import Summary from './Summary';
 
@@ -14,6 +15,8 @@ const ProcessFlowDiagram = () => {
         </h1>
         
         <Summary />
+        
+        <GeneralDiagram />
         
         {processData.map((phase, index) => (
           <React.Fragment key={phase.id}>
