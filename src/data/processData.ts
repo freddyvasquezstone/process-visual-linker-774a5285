@@ -277,7 +277,7 @@ export const coreBusinessDiagram = {
   process: {
     id: 'core-negocio',
     name: 'ARQUITECTURA CORE DE NEGOCIOS HUMADEA',
-    pdfLink: '', // Agregar enlace cuando esté disponible
+    pdfLink: 'https://drive.google.com/file/d/1q9Rpt7cDCkaX7Yq2HN0teUQid2-t2Eub/view?usp=drive_link', // Agregar enlace cuando esté disponible
     figmaLink: '' // Agregar enlace cuando esté disponible
   }
 };
