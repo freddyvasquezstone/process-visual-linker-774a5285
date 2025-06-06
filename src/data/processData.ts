@@ -258,13 +258,13 @@ export const processData: Phase[] = [
 
 export const generalDiagram = {
   id: 'general-diagram',
-  title: 'DIAGRAMA GENERAL PROCESOS STONE',
+  title: 'ARQUITECTURA GENERAL PROCESOS STONE',
   icon: '📊',
   bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
   process: {
     id: 'diagrama-general',
-    name: 'DIAGRAMA GENERAL PROCESOS STONE',
+    name: 'ARQUITECTURA GENERAL PROCESOS STONE',
     pdfLink: '', // Se puede agregar el enlace aquí
-    figmaLink: '' // Se puede agregar el enlace aquí
+    figmaLink: 'https://www.figma.com/board/OpUQDOUmTwd3jJdImHC1yJ/Arquitectura-TMS-HUMADEA?node-id=0-1&p=f&t=DQVjEOe3jKb1wdDs-0' // Se puede agregar el enlace aquí
   }
 };
