@@ -27,8 +27,8 @@ export const processData: Phase[] = [
       {
         id: 'seguridad-analisis',
         name: 'SEGURIDAD - ANÁLISIS',
-        pdfLink: 'https://drive.google.com/file/d/1-hBSib88wMtuKKS4B8QLJko7WA9AJ3Kp/view?usp=drive_link'
-        ///figmaLink: 'https://figma.com/seguridad'
+        pdfLink: 'https://drive.google.com/file/d/1IfYS0ZyDnsLs4k1lfjU1b4KnHVVjivpx/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/hQeE8dzKmGoItzKi2Vutaw/An%C3%A1lisis-y-Seguridad?node-id=0-1&p=f&t=Hpy9SuGFySKbMYxk-0'
       }
     ]
   },
