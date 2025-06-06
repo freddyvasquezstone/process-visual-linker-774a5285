@@ -22,7 +22,8 @@ export const processData: Phase[] = [
       {
         id: 'activacion',
         name: 'ACTIVACIÓN DE VEHÍCULOS',
-        pdfLink: 'https://drive.google.com/file/d/1UpJLJ0v8r79PbSivKvfHdqmR_dCTCRKw/view?usp=drive_link'
+        pdfLink: 'https://drive.google.com/file/d/1UpJLJ0v8r79PbSivKvfHdqmR_dCTCRKw/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/hQeE8dzKmGoItzKi2Vutaw/An%C3%A1lisis-y-Seguridad?node-id=0-1&p=f&t=Hpy9SuGFySKbMYxk-0'
       },
       {
         id: 'seguridad-analisis',
