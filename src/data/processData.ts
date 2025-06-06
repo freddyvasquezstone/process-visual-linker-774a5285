@@ -260,10 +260,10 @@ export const generalDiagram = {
   id: 'general-diagram',
   title: 'ARQUITECTURA GENERAL PROCESOS',
   icon: '📊',
-  bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100 flex justify-center items-center min-h-screen',
+  bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
   process: {
     id: 'diagrama-general',
-    name: 'ARQUITECTURA GENERAL PROCESOS STONE',
+    name: 'ARQUITECTURA GENERAL PROCESOS',
     pdfLink: 'https://drive.google.com/file/d/1x3CADoSWyWQs4izS3czP4u6sg6FnLsH2/view?usp=drive_link',
     figmaLink: 'https://www.figma.com/board/OpUQDOUmTwd3jJdImHC1yJ/Arquitectura-TMS-HUMADEA?node-id=0-1&p=f&t=DQVjEOe3jKb1wdDs-0'
   }
@@ -273,11 +273,11 @@ export const coreBusinessDiagram = {
   id: 'core-business-diagram',
   title: 'ARQUITECTURA CORE DE NEGOCIOS HUMADEA',
   icon: '🏢',
-  bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100 flex justify-center items-center min-h-screen',
+  bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
   process: {
     id: 'core-negocio',
     name: 'ARQUITECTURA CORE DE NEGOCIOS HUMADEA',
-    pdfLink: 'https://drive.google.com/file/d/1q9Rpt7cDCkaX7Yq2HN0teUQid2-t2Eub/view?usp=drive_link',
+    pdfLink: 'https://drive.google.com/file/d/1q9Rpt7cDCkaX7Yq2HN0teUQid2-t2Eub/view?usp=drive_link', // Agregar enlace cuando esté disponible
     figmaLink: '' // Agregar enlace cuando esté disponible
   }
 };
