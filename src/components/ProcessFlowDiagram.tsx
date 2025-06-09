@@ -1,12 +1,67 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { processData } from '../data/processData';
 import ProcessPhase from './ProcessPhase';
 import GeneralDiagram from './GeneralDiagram';
 import Legend from './Legend';
 import Summary from './Summary';
+import { Phase, Process } from '../types/process';
 
 const ProcessFlowDiagram = () => {
+  const [phases, setPhases] = useState<Phase[]>(processData);
+
+  const handleReorderProcesses = (
+    targetPhaseId: string, 
+    fromIndex: number, 
+    toIndex: number, 
+    fromPhaseId?: string
+  ) => {
+    setPhases(prevPhases => {
+      const newPhases = [...prevPhases];
+      
+      if (fromPhaseId && fromPhaseId !== targetPhaseId) {
+        // Mover entre fases diferentes
+        const fromPhaseIndex = newPhases.findIndex(p => p.id === fromPhaseId);
+        const toPhaseIndex = newPhases.findIndex(p => p.id === targetPhaseId);
+        
+        if (fromPhaseIndex !== -1 && toPhaseIndex !== -1) {
+          const processToMove = newPhases[fromPhaseIndex].processes[fromIndex];
+          
+          // Remover del origen
+          newPhases[fromPhaseIndex] = {
+            ...newPhases[fromPhaseIndex],
+            processes: newPhases[fromPhaseIndex].processes.filter((_, index) => index !== fromIndex)
+          };
+          
+          // Agregar al destino
+          const newProcesses = [...newPhases[toPhaseIndex].processes];
+          newProcesses.splice(toIndex, 0, processToMove);
+          
+          newPhases[toPhaseIndex] = {
+            ...newPhases[toPhaseIndex],
+            processes: newProcesses
+          };
+        }
+      } else {
+        // Reordenar dentro de la misma fase
+        const phaseIndex = newPhases.findIndex(p => p.id === targetPhaseId);
+        
+        if (phaseIndex !== -1) {
+          const newProcesses = [...newPhases[phaseIndex].processes];
+          const [movedProcess] = newProcesses.splice(fromIndex, 1);
+          newProcesses.splice(toIndex, 0, movedProcess);
+          
+          newPhases[phaseIndex] = {
+            ...newPhases[phaseIndex],
+            processes: newProcesses
+          };
+        }
+      }
+      
+      return newPhases;
+    });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 p-5">
       <div className="max-w-7xl mx-auto bg-white rounded-2xl p-8 shadow-2xl">
@@ -18,13 +73,14 @@ const ProcessFlowDiagram = () => {
         
         <GeneralDiagram />
         
-        {processData.map((phase, index) => (
+        {phases.map((phase, index) => (
           <React.Fragment key={phase.id}>
             <ProcessPhase 
               phase={phase}
               phaseNumber={index + 1}
+              onReorderProcesses={handleReorderProcesses}
             />
-            {index < processData.length - 1 && (
+            {index < phases.length - 1 && (
               <div className="text-center text-3xl text-gray-500 my-4">
                 {index === 2 || index === 6 ? (
                   <div className="flex justify-center items-center my-5">

@@ -1,19 +1,21 @@
 
 import React from 'react';
-import { Process } from '../types/process';
+import { Process, DragData } from '../types/process';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from './ui/dropdown-menu';
-import { ExternalLink, FileText, Figma } from 'lucide-react';
+import { ExternalLink, FileText, Figma, GripVertical } from 'lucide-react';
 
 interface ProcessBoxProps {
   process: Process;
+  phaseId: string;
+  index: number;
 }
 
-const ProcessBox: React.FC<ProcessBoxProps> = ({ process }) => {
+const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
   const hasAllLinks = process.pdfLink && process.figmaLink;
   const hasNoLinks = !process.pdfLink && !process.figmaLink;
   
@@ -32,59 +34,87 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process }) => {
     }
   };
 
+  const handleDragStart = (e: React.DragEvent) => {
+    const dragData: DragData = {
+      processId: process.id,
+      phaseId: phaseId,
+      index: index
+    };
+    e.dataTransfer.setData('text/plain', JSON.stringify(dragData));
+    e.dataTransfer.effectAllowed = 'move';
+    
+    // Add visual feedback
+    setTimeout(() => {
+      (e.target as HTMLElement).style.opacity = '0.5';
+    }, 0);
+  };
+
+  const handleDragEnd = (e: React.DragEvent) => {
+    (e.target as HTMLElement).style.opacity = '1';
+  };
+
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <div 
-          className={`bg-white/90 p-4 rounded-lg border-l-4 ${borderColor} ${hoverBorderColor} 
-                     transition-all duration-300 cursor-pointer hover:bg-white hover:scale-105 
-                     hover:shadow-lg group`}
-        >
-          <div className="text-sm font-medium text-gray-800 mb-3 flex items-center justify-between">
-            {process.name}
-            <ExternalLink className="h-4 w-4 opacity-50 group-hover:opacity-100 transition-opacity" />
-          </div>
-          
-          <div className="mt-2 flex items-center justify-between">
-            <div className="flex gap-1">
-              <div className={`w-2 h-2 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
-              <div className={`w-2 h-2 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
-            </div>
-            <div className={`text-xs font-medium ${hasAllLinks ? 'text-green-600' : hasNoLinks ? 'text-yellow-600' : 'text-orange-600'}`}>
-              {hasAllLinks ? 'Completo' : hasNoLinks ? 'Pendiente' : 'Parcial'}
-            </div>
-          </div>
-        </div>
-      </DropdownMenuTrigger>
+    <div
+      draggable
+      onDragStart={handleDragStart}
+      onDragEnd={handleDragEnd}
+      className={`bg-white/90 p-4 rounded-lg border-l-4 ${borderColor} ${hoverBorderColor} 
+                 transition-all duration-300 cursor-move hover:bg-white hover:scale-105 
+                 hover:shadow-lg group relative`}
+    >
+      <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-50 transition-opacity">
+        <GripVertical className="h-4 w-4 text-gray-400" />
+      </div>
       
-      <DropdownMenuContent className="w-48 bg-white border shadow-lg">
-        {process.pdfLink && (
-          <DropdownMenuItem 
-            onClick={handlePdfClick}
-            className="flex items-center gap-2 cursor-pointer hover:bg-red-50"
-          >
-            <FileText className="h-4 w-4 text-red-500" />
-            <span>Documentación</span>
-          </DropdownMenuItem>
-        )}
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <div className="cursor-pointer">
+            <div className="text-sm font-medium text-gray-800 mb-3 flex items-center justify-between pr-6">
+              {process.name}
+              <ExternalLink className="h-4 w-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+            </div>
+            
+            <div className="mt-2 flex items-center justify-between">
+              <div className="flex gap-1">
+                <div className={`w-2 h-2 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+                <div className={`w-2 h-2 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+              </div>
+              <div className={`text-xs font-medium ${hasAllLinks ? 'text-green-600' : hasNoLinks ? 'text-yellow-600' : 'text-orange-600'}`}>
+                {hasAllLinks ? 'Completo' : hasNoLinks ? 'Pendiente' : 'Parcial'}
+              </div>
+            </div>
+          </div>
+        </DropdownMenuTrigger>
         
-        {process.figmaLink && (
-          <DropdownMenuItem 
-            onClick={handleFigmaClick}
-            className="flex items-center gap-2 cursor-pointer hover:bg-purple-50"
-          >
-            <Figma className="h-4 w-4 text-purple-500" />
-            <span>Figma</span>
-          </DropdownMenuItem>
-        )}
-        
-        {hasNoLinks && (
-          <DropdownMenuItem disabled className="text-gray-400">
-            <span>No hay enlaces disponibles</span>
-          </DropdownMenuItem>
-        )}
-      </DropdownMenuContent>
-    </DropdownMenu>
+        <DropdownMenuContent className="w-48 bg-white border shadow-lg">
+          {process.pdfLink && (
+            <DropdownMenuItem 
+              onClick={handlePdfClick}
+              className="flex items-center gap-2 cursor-pointer hover:bg-red-50"
+            >
+              <FileText className="h-4 w-4 text-red-500" />
+              <span>Documentación</span>
+            </DropdownMenuItem>
+          )}
+          
+          {process.figmaLink && (
+            <DropdownMenuItem 
+              onClick={handleFigmaClick}
+              className="flex items-center gap-2 cursor-pointer hover:bg-purple-50"
+            >
+              <Figma className="h-4 w-4 text-purple-500" />
+              <span>Figma</span>
+            </DropdownMenuItem>
+          )}
+          
+          {hasNoLinks && (
+            <DropdownMenuItem disabled className="text-gray-400">
+              <span>No hay enlaces disponibles</span>
+            </DropdownMenuItem>
+          )}
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
   );
 };
 

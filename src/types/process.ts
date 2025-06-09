@@ -13,3 +13,9 @@ export interface Phase {
   bgClass: string;
   processes: Process[];
 }
+
+export interface DragData {
+  processId: string;
+  phaseId: string;
+  index: number;
+}
