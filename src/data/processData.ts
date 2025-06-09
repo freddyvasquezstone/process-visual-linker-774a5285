@@ -78,6 +78,10 @@ export const processData: Phase[] = [
         figmaLink: 'https://www.figma.com/board/jO92PF5KDyyW3I3l9rfrFm/Tarifas-y-Fletes-HUMADEA?node-id=0-1&p=f&t=a4hDS6VGRxNTQ2XE-0'
       },
       {
+        id: 'liquidos',
+        name: 'LÍQUIDOS'
+      },
+      {
         id: 'orden-carguee',
         name: 'ORDEN DE CARGUE',
         pdfLink: 'https://drive.google.com/file/d/1q9YJ3zoEAWuMhY6hcKZs574xY74hGLVs/view?usp=drive_link',
@@ -88,7 +92,10 @@ export const processData: Phase[] = [
         name: 'ENTURNAMIENTO',
         figmaLink: 'https://www.figma.com/board/dsVuiJid3C4MIuo0iCRq8F/Enturnamiento---HUMAEDA?node-id=7-2246&t=hhrXbVoLnWJacgRS-0'
       },
-      
+      {
+        id: 'comercio-exterior',
+        name: 'COMERCIO EXTERIOR',
+      },
       {
         id: 'creacion-do',
         name: 'CREACIÓN D.O',
@@ -185,7 +192,7 @@ export const processData: Phase[] = [
   },
   {
     id: 'risk',
-    title: 'GESTIÓN DE RIESGOS Y EXCEPCIONES',
+    title: 'GESTIÓN DE RIESGOS',
     icon: '⚠️',
     bgClass: 'bg-gradient-to-br from-red-50 to-red-100',
     processes: [
@@ -201,10 +208,7 @@ export const processData: Phase[] = [
         id: 'siniestros',
         name: 'SINIESTROS'
       },
-      {
-        id: 'liquidos',
-        name: 'LÍQUIDOS'
-      }
+      
     ]
   },
   {
@@ -241,27 +245,24 @@ export const processData: Phase[] = [
       }
     ]
   },
-  {
-    id: 'specialized',
-    title: 'OPERACIÓN ESPECIALIZADA',
-    icon: '🌍',
-    bgClass: 'bg-gradient-to-br from-red-50 to-red-100',
-    processes: [
-      {
-        id: 'comercio-exterior',
-        name: 'COMERCIO EXTERIOR',
-      },
-      {
-        id: 'logistica-contenedores',
-        name: 'LOGÍSTICA - CONTENEDORES'
-      },
-      {
-        id: 'operacion-internacional',
-        name: 'OPERACIÓN INTERNACIONAL'
-      }
-      
-    ]
-  },
+  //{
+  //  id: 'specialized',
+  // title: 'OPERACIÓN ESPECIALIZADA',
+  //  icon: '🌍',
+  //  bgClass: 'bg-gradient-to-br from-red-50 to-red-100',
+  //  processes: [
+  //    
+  //    {
+  //      id: 'logistica-contenedores',
+  //      name: 'LOGÍSTICA - CONTENEDORES'
+  //    },
+  //    {
+  //      id: 'operacion-internacional',
+  //      name: 'OPERACIÓN INTERNACIONAL'
+  //    }
+  //    
+  //  ]
+  //},
   {
     id: 'support-areas',
     title: 'ÁREAS DE APOYO',
