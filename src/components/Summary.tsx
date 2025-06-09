@@ -10,6 +10,11 @@ const Summary = () => {
     let pendientes = 0;
 
     processData.forEach(phase => {
+      // Excluir las áreas de apoyo del cálculo del resumen
+      if (phase.id === 'support-areas') {
+        return;
+      }
+      
       phase.processes.forEach((process: Process) => {
         const hasAllLinks = process.pdfLink && process.figmaLink;
         const hasNoLinks = !process.pdfLink && !process.figmaLink;
