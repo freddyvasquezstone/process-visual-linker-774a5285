@@ -22,9 +22,15 @@ export const processData: Phase[] = [
       },
       {
         id: 'cupo-cliente',
-        name: 'CONTROL CUPO',
+        name: 'ASIGNACIÓN DE CUPO CLIENTES',
         pdfLink:'https://drive.google.com/file/d/1vAl_x_OcL72NYk8CHyidICMd7044ATET/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/74GfVbGmkYkrSZkvi1JrEe/Asignaci%C3%B3n-Cupo-Clientes?node-id=0-1&t=abKn3zFPwG7LXHxQ-1'
+      },
+      {
+        id: 'novedades-cupo',
+        name: 'NOVEDADES CUPOS DE CLIENTES',
+        pdfLink:'https://drive.google.com/file/d/1N-d71Hu3z428oE1bLJimWiiIQmZUeOmh/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/O30JXnUaUExEHptYRfcqTY/Novedades-Cupo-de-Cliente?node-id=0-1&p=f&t=RiMP9W5iSAtrdE3b-0 '
       }
     ]
   },
@@ -35,20 +41,54 @@ export const processData: Phase[] = [
     bgClass: 'bg-gradient-to-br from-green-50 to-green-100',
     processes: [
       {
+        id: 'asociados',
+        name: 'CREACIÓN DE ASOCIADOS, CONDUCTORES Y POSEEDORES',
+        pdfLink: 'https://drive.google.com/file/d/1hX9U6sYKmxVpDQp3bEE-LRsmIUM7TKif/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/Bdc4WIArk91v49BcDsoXyD/Creaci%C3%B3n-de-un-Asociado?node-id=0-1&p=f&t=kPpSD9PrVF0Q0OFb-0'
+      },
+      
+      {
         id: 'creacion-op',
         name: 'CREACIÓN ORDEN PRODUCCIÓN',
         pdfLink: 'https://drive.google.com/file/d/1BeY7ScJyU1yigd6SIrdtKCVBCJyWsG7e/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/uLKom2kYlZ7X4duAeOUf6y/Creaci%C3%B3n-Orden-de-Producci%C3%B3n-HUMADEA?node-id=0-1&t=gpnhuL9ZwkxTa8EP-1'
       },
       {
+        id: 'novedades-op',
+        name: 'NOVEDADES OP',
+        pdfLink: 'https://drive.google.com/file/d/1kpuejtZcxDPJdWS2G9MlAtp0F9Ki1Ckp/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/UAE9bV4404qRICSBipbLVy/Novedades-Orden-de-Producci%C3%B3n?t=jl9oTRqoBmGbjhyK-0'
+      },
+      {
+        id: 'lineas-negocio',
+        name: 'LÍNEAS DE NEGOCIO',
+        pdfLink:'https://drive.google.com/file/d/1rqH5WwxX68xa3Ui1gx8A3RTqpI2kBSev/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/phaRlMnfCQfymxvGhNdzcp/L%C3%ADneas-de-Negocio-Humadea?node-id=0-1&p=f&t=4TTgukClu5oBjtHG-0'
+      },
+      {
+        id: 'refrigerados',
+        name: 'CREACIÓN OP REFRIGERADOS, MERCANCÍAS PELIGROSAS Y RO RO, EXTRADIMENSIONADA',
+        pdfLink: 'https://drive.google.com/file/d/16A5rBzWamUa2fdy2OCt10u4EmPh7qANY/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/uLKom2kYlZ7X4duAeOUf6y/Creaci%C3%B3n-Orden-de-Producci%C3%B3n-HUMADEA?node-id=0-1&t=gpnhuL9ZwkxTa8EP-1'
+      },
+      {
+        id: 'fletes-tarifas',
+        name: 'FLETES Y TARIFAS',
+        pdfLink:'https://drive.google.com/file/d/1bMmLwkY-EN-YSeTsb29atWDab0QwgotY/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/jO92PF5KDyyW3I3l9rfrFm/Tarifas-y-Fletes-HUMADEA?node-id=0-1&p=f&t=a4hDS6VGRxNTQ2XE-0'
+      },
+      {
+        id: 'orden-carguee',
+        name: 'ORDEN DE CARGUE',
+        pdfLink: 'https://drive.google.com/file/d/1q9YJ3zoEAWuMhY6hcKZs574xY74hGLVs/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/LpryNSsTSvMSGNxHeSuNYD/Flow-chart--Community-?node-id=0-1&p=f&t=t92OpLAuDJYUje2S-0'
+      },
+      {
         id: 'enturnamiento',
         name: 'ENTURNAMIENTO',
         figmaLink: 'https://www.figma.com/board/dsVuiJid3C4MIuo0iCRq8F/Enturnamiento---HUMAEDA?node-id=7-2246&t=hhrXbVoLnWJacgRS-0'
       },
-      {
-        id: 'consecucion-vehiculo',
-        name: 'CONSECUCIÓN DE VEHÍCULO',
-      },
+      
       {
         id: 'creacion-do',
         name: 'CREACIÓN D.O',
@@ -56,7 +96,11 @@ export const processData: Phase[] = [
       {
         id: 'aprobacion-do',
         name: 'APROBACIÓN D.O',
-      }
+      },
+      {
+        id: 'servicio-cliente',
+        name: 'SERVICIO CLIENTE',
+      },
     ]
   },
   {
@@ -77,13 +121,17 @@ export const processData: Phase[] = [
         figmaLink: 'https://www.figma.com/board/hQeE8dzKmGoItzKi2Vutaw/An%C3%A1lisis-y-Seguridad?node-id=0-1&p=f&t=Hpy9SuGFySKbMYxk-0'
       },
       {
-        id: 'creacion-contenedor',
-        name: 'CREACIÓN CONTENEDOR',
+        id: 'rodamientos',
+        name: 'RODAMIENTOS'
       },
       {
-        id: 'precinto-controles',
-        name: 'PRECINTO CONTROLES',
-      }
+        id: 'logistica-contenedores',
+        name: 'LOGÍSTICA - CONTENEDORES'
+      },
+      {
+        id: 'control-precintos',
+        name: 'CONTROL DE PRECINTOS'
+      },
     ]
   },
   {
@@ -92,10 +140,7 @@ export const processData: Phase[] = [
     icon: '📋',
     bgClass: 'bg-gradient-to-br from-orange-50 to-orange-100',
     processes: [
-      {
-        id: 'creacion-op-manifiesto',
-        name: 'CREACIÓN OP. MANIFIESTO',
-      },
+      
       {
         id: 'remesa',
         name: 'REMESA',
@@ -103,6 +148,16 @@ export const processData: Phase[] = [
       {
         id: 'manifiesto',
         name: 'MANIFIESTO'
+      },
+      {
+        id: 'operacion-internacional',
+        name: 'OPERACIÓN INTERNACIONAL'
+      },
+      {
+        id: 'cartera-transportador',
+        name: 'CARTERA TRANSPORTADOR',
+        pdfLink: 'https://drive.google.com/file/d/1PoOPoLzjUBTwCUFGvKqFuaik2jgf0iAk/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/Fqm6ln3bdm714Q3ZKAkrzE/Cartera-Transportador-Humadea?node-id=5004-261&t=PKNaIYy4jP2v3O9c-0'
       }
     ]
   },
@@ -112,10 +167,7 @@ export const processData: Phase[] = [
     icon: '📍',
     bgClass: 'bg-gradient-to-br from-yellow-50 to-yellow-100',
     processes: [
-      {
-        id: 'trafico-en-ruta',
-        name: 'TRÁFICO EN RUTA',
-      },
+      
       {
         id: 'tracking-seguridad',
         name: 'TRACKING SEGURIDAD TRÁFICO',
@@ -132,22 +184,50 @@ export const processData: Phase[] = [
     ]
   },
   {
+    id: 'risk',
+    title: 'GESTIÓN DE RIESGOS Y EXCEPCIONES',
+    icon: '⚠️',
+    bgClass: 'bg-gradient-to-br from-red-50 to-red-100',
+    processes: [
+      {
+        id: 'riesgos-seguros',
+        name: 'RIESGOS Y SEGUROS'
+      },
+      {
+        id: 'reexpediciones',
+        name: 'REEXPEDICIONES'
+      },
+      {
+        id: 'siniestros',
+        name: 'SINIESTROS'
+      },
+      {
+        id: 'liquidos',
+        name: 'LÍQUIDOS'
+      }
+    ]
+  },
+  {
     id: 'financial',
     title: 'GESTIÓN FINANCIERA',
     icon: '💵',
     bgClass: 'bg-gradient-to-br from-yellow-50 to-yellow-200',
     processes: [
       {
+        id: 'anticipo',
+        name: 'CREACIÓN DE ANTICIPO'
+      },
+      {
         id: 'cumplidos',
-        name: 'CUMPLIDOS',
+        name: 'CUMPLIDOS Y LIQUIDACIONES',
+      },
+      {
+        id: 'novedades-liquidacion',
+        name: 'NOVEDADES DE LIQUIDACIÓN Y CUMPLIDOS'
       },
       {
         id: 'facturacion',
         name: 'FACTURACIÓN',
-      },
-      {
-        id: 'liquidacion',
-        name: 'LIQUIDACIÓN',
       },
       {
         id: 'cartera',
@@ -168,33 +248,18 @@ export const processData: Phase[] = [
     bgClass: 'bg-gradient-to-br from-red-50 to-red-100',
     processes: [
       {
-        id: 'internacional',
-        name: 'INTERNACIONAL',
+        id: 'comercio-exterior',
+        name: 'COMERCIO EXTERIOR',
       },
       {
-        id: 'comercial-operaciones',
-        name: 'COMERCIAL OPERACIONES',
+        id: 'logistica-contenedores',
+        name: 'LOGÍSTICA - CONTENEDORES'
       },
       {
-        id: 'seguridad-trafico-esp',
-        name: 'SEGURIDAD Y TRÁFICO',
-      },
-      {
-        id: 'gestion-financiera',
-        name: 'G. FINANCIERA',
-      },
-      {
-        id: 'liberes-fronteras',
-        name: 'LIBERES FRONTERAS TERRESTRES',
-      },
-      {
-        id: 'rapido-humadea',
-        name: 'RAPIDO HUMADEA',
-      },
-      {
-        id: 'turnpike',
-        name: 'TURNPIKE',
+        id: 'operacion-internacional',
+        name: 'OPERACIÓN INTERNACIONAL'
       }
+      
     ]
   },
   {
@@ -219,10 +284,7 @@ export const processData: Phase[] = [
         id: 'compras',
         name: 'COMPRAS',
       },
-      {
-        id: 'comercio-exterior',
-        name: 'COMERCIO EXTERIOR',
-      },
+      
       {
         id: 'gestion-humana',
         name: 'GESTIÓN HUMANA',
@@ -243,23 +305,14 @@ export const processData: Phase[] = [
     icon: '⚙️',
     bgClass: 'bg-gradient-to-br from-purple-50 to-purple-100',
     processes: [
+      
       {
-        id: 'rodamientos',
-        name: 'RODAMIENTOS',
+        id: 'estructura-app',
+        name: 'ESTRUCTURA APP'
       },
       {
-        id: 'lineas-negocio',
-        name: 'LÍNEAS DE NEGOCIO',
-        pdfLink:'https://drive.google.com/file/d/1rqH5WwxX68xa3Ui1gx8A3RTqpI2kBSev/view?usp=drive_link',
-        figmaLink: 'https://www.figma.com/board/phaRlMnfCQfymxvGhNdzcp/L%C3%ADneas-de-Negocio-Humadea?node-id=0-1&p=f&t=4TTgukClu5oBjtHG-0'
-      },
-      {
-        id: 'servicio-cliente',
-        name: 'SERVICIO CLIENTE',
-      },
-      {
-        id: 'cartera-turnpike',
-        name: 'CARTERA TURNPIKE',
+        id: 'turnpike',
+        name: 'TURNPIKE'
       }
     ]
   }
