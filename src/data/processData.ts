@@ -157,6 +157,10 @@ export const processData: Phase[] = [
         name: 'MANIFIESTO'
       },
       {
+        id: 'reexpediciones',
+        name: 'REEXPEDICIONES'
+      },
+      {
         id: 'operacion-internacional',
         name: 'OPERACIÓN INTERNACIONAL'
       },
