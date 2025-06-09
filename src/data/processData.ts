@@ -149,7 +149,7 @@ export const processData: Phase[] = [
         id: 'orden-carguee',
         name: 'ORDEN DE CARGUE',
         pdfLink: 'https://drive.google.com/file/d/1bMmLwkY-EN-YSeTsb29atWDab0QwgotY/view?usp=drive_link',
-        figmaLink: 'https://www.figma.com/board/F2pwOSf5GFXq0G5gLeV7u7/Creaci%C3%B3n-de-Orden-de-Cargue-HUMADEA?node-id=0-1&p=f&t=wR8CiNPfd7pXS1Xa-0'
+        figmaLink: 'https://www.figma.com/board/LpryNSsTSvMSGNxHeSuNYD/Flow-chart--Community-?node-id=0-1&p=f&t=t92OpLAuDJYUje2S-0'
       },
       {
         id: 'remesa',
