@@ -79,7 +79,9 @@ export const processData: Phase[] = [
       },
       {
         id: 'costos-operacionales',
-        name: 'GUÍA DE COSTOS OPERACIONALES'
+        name: 'GUÍA DE COSTOS OPERACIONALES',
+        figmaLink: 'https://www.figma.com/board/u5Lc4QMvrGl1c2KOopQ8oe/Gu%C3%ADa-de-Costos-Operacionales?node-id=0-1&p=f&t=wR8CiNPfd7pXS1Xa-0'
+        
       },
       {
         id: 'lineas-negocio',
@@ -146,8 +148,8 @@ export const processData: Phase[] = [
       {
         id: 'orden-carguee',
         name: 'ORDEN DE CARGUE',
-        //pdfLink: 'https://drive.google.com/file/d/1kpuejtZcxDPJdWS2G9MlAtp0F9Ki1Ckp/view?usp=drive_link',
-        //figmaLink: 'https://www.figma.com/board/UAE9bV4404qRICSBipbLVy/Novedades-Orden-de-Producci%C3%B3n?t=jl9oTRqoBmGbjhyK-0'
+        pdfLink: 'https://drive.google.com/file/d/1bMmLwkY-EN-YSeTsb29atWDab0QwgotY/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/F2pwOSf5GFXq0G5gLeV7u7/Creaci%C3%B3n-de-Orden-de-Cargue-HUMADEA?node-id=0-1&p=f&t=wR8CiNPfd7pXS1Xa-0'
       },
       {
         id: 'remesa',
