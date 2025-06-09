@@ -96,6 +96,7 @@ export const processData: Phase[] = [
       {
         id: 'enturnamiento',
         name: 'ENTURNAMIENTO',
+        pdfLink: 'https://drive.google.com/file/d/12rUQY-YVWv1-KUxWWgpgowYqA10RBD9v/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/dsVuiJid3C4MIuo0iCRq8F/Enturnamiento---HUMAEDA?node-id=7-2246&t=hhrXbVoLnWJacgRS-0'
       },
       {
