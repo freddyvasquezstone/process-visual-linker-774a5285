@@ -185,7 +185,11 @@ export const processData: Phase[] = [
       },
       {
         id: 'tracking-comercial',
-        name: 'TRACKING COMERCIAL - OPERACIONES',
+        name: 'TRACKING COMERCIAL',
+      },
+      {
+        id: 'tracking-comercial',
+        name: 'TRACKING OPERATIVO',
       },
       {
         id: 'seguridad-trafico',
