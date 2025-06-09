@@ -245,12 +245,6 @@ export const processData: Phase[] = [
         name: 'FACTURACIÓN',
       },
       {
-        id: 'cartera',
-        name: 'CARTERA',
-        pdfLink: 'https://drive.google.com/file/d/1PoOPoLzjUBTwCUFGvKqFuaik2jgf0iAk/view?usp=drive_link',
-        figmaLink: 'https://www.figma.com/board/Fqm6ln3bdm714Q3ZKAkrzE/Cartera-Transportador-Humadea?node-id=5004-261&t=PKNaIYy4jP2v3O9c-0'
-      },
-      {
         id: 'tesoreria',
         name: 'TESORERÍA',
       }
