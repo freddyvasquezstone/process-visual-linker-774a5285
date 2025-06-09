@@ -200,10 +200,7 @@ export const processData: Phase[] = [
         id: 'riesgos-seguros',
         name: 'RIESGOS Y SEGUROS'
       },
-      {
-        id: 'reexpediciones',
-        name: 'REEXPEDICIONES'
-      },
+      
       {
         id: 'siniestros',
         name: 'SINIESTROS'
