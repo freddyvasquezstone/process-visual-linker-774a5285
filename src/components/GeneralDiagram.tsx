@@ -14,11 +14,13 @@ const GeneralDiagram = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
           <ProcessBox 
+            key={generalDiagram.process.id}
             process={generalDiagram.process}
             phaseId="general"
             index={0}
           />
           <ProcessBox 
+            key={coreBusinessDiagram.process.id}
             process={coreBusinessDiagram.process}
             phaseId="general"
             index={1}
