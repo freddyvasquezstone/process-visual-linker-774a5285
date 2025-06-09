@@ -82,10 +82,16 @@ export const processData: Phase[] = [
         name: 'LÍQUIDOS'
       },
       {
-        id: 'orden-carguee',
+        id: 'orden-cargue',
         name: 'ORDEN DE CARGUE',
         pdfLink: 'https://drive.google.com/file/d/1q9YJ3zoEAWuMhY6hcKZs574xY74hGLVs/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/LpryNSsTSvMSGNxHeSuNYD/Flow-chart--Community-?node-id=0-1&p=f&t=t92OpLAuDJYUje2S-0'
+      },
+      {
+        id: 'guia-costos',
+        name: 'GUIA DE COSTOS OPERACIONALES',
+        pdfLink: 'https://drive.google.com/file/d/1wr4mELXV71xCOZN62dUrU8hYskdlAhw3/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/u5Lc4QMvrGl1c2KOopQ8oe/Gu%C3%ADa-de-Costos-Operacionales?node-id=0-1&p=f&t=DdjoSo1c5xYlQcUI-0'
       },
       {
         id: 'enturnamiento',
