@@ -79,7 +79,8 @@ export const processData: Phase[] = [
       },
       {
         id: 'liquidos',
-        name: 'LÍQUIDOS'
+        name: 'LÍQUIDOS',
+        figmaLink: 'https://www.figma.com/board/cPli8EvLlViIEpm28jhcq1/L%C3%ADquidos-Humadea?node-id=603-139&t=ky1rpTdB8m7Bs6Zu-0'
       },
       {
         id: 'orden-cargue',
