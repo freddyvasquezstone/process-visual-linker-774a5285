@@ -106,7 +106,7 @@ export const processData: Phase[] = [
         ///pdfLink: 'https://drive.google.com/file/d/12rUQY-YVWv1-KUxWWgpgowYqA10RBD9v/view?usp=drive_link',
         figmaLink: 'https://docs.google.com/document/d/1ZV-qQllj6y0gSzdqqU-XLZD78l6rmTSy/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true'
       },
-      
+
       {
         id: 'creacion-do',
         name: 'CREACIÓN D.O',
@@ -224,7 +224,9 @@ export const processData: Phase[] = [
     processes: [
       {
         id: 'riesgos-seguros',
-        name: 'RIESGOS Y SEGUROS'
+        name: 'RIESGOS Y SEGUROS',
+        //pdfLink: 'https://drive.google.com/file/d/1IfYS0ZyDnsLs4k1lfjU1b4KnHVVjivpx/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/yeUQMGsMYRK4HzkaYusITP/Seguros-Humadea?node-id=0-1&p=f&t=Fx8vFMfx4ySmmSKN-0'
       },
       
       {
