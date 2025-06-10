@@ -7,6 +7,7 @@ export const processData: Phase[] = [
     icon: '👥',
     bgClass: 'bg-gradient-to-br from-blue-50 to-blue-100',
     processes: [
+      // Primera fila - 4 elementos
       {
         id: 'creacion-cliente',
         name: 'CREACIÓN DE CLIENTES',
@@ -31,12 +32,14 @@ export const processData: Phase[] = [
         pdfLink:'https://drive.google.com/file/d/1N-d71Hu3z428oE1bLJimWiiIQmZUeOmh/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/O30JXnUaUExEHptYRfcqTY/Novedades-Cupo-de-Cliente?node-id=0-1&p=f&t=RiMP9W5iSAtrdE3b-0'
       },
+      // Segunda fila - 1 elemento
       {
         id: 'fletes-tarifas',
         name: 'TARIFAS Y FLETES',
         pdfLink:'https://drive.google.com/file/d/1bMmLwkY-EN-YSeTsb29atWDab0QwgotY/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/jO92PF5KDyyW3I3l9rfrFm/Tarifas-y-Fletes-HUMADEA?node-id=0-1&p=f&t=a4hDS6VGRxNTQ2XE-0'
       },
+      // Tercera fila - 3 elementos
       {
         id: 'creacion-op',
         name: 'CREACIÓN ORDEN DE PRODUCCIÓN CARGA GRAL',
@@ -54,6 +57,7 @@ export const processData: Phase[] = [
         name: 'LÍQUIDOS',
         figmaLink: 'https://www.figma.com/board/cPli8EvLlViIEpm28jhcq1/L%C3%ADquidos-Humadea?node-id=603-139&t=ky1rpTdB8m7Bs6Zu-0'
       },
+      // Cuarta fila - 2 elementos (uno grande y uno amarillo para novedades)
       {
         id: 'refrigerados',
         name: 'CREACIÓN OP REFRIGERADOS, MERCANCÍAS PELIGROSAS, RORO, EXTRADIMENSIONADA',
@@ -66,6 +70,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1kpuejtZcxDPJdWS2G9MlAtp0F9Ki1Ckp/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/UAE9bV4404qRICSBipbLVy/Novedades-Orden-de-Producci%C3%B3n?t=jl9oTRqoBmGbjhyK-0'
       },
+      // Quinta fila - 2 elementos
       {
         id: 'servicio-cliente',
         name: 'SERVICIO AL CLIENTE',
@@ -82,6 +87,7 @@ export const processData: Phase[] = [
     icon: '🚛',
     bgClass: 'bg-gradient-to-br from-green-50 to-green-100',
     processes: [
+      // Primera fila - 4 elementos
       {
         id: 'asociados',
         name: 'CREACIÓN DE ASOCIADOS, CONDUCTORES Y POSEEDORES',
@@ -106,6 +112,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1UpJLJ0v8r79PbSivKvfHdqmR_dCTCRKw/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/hQeE8dzKmGoItzKi2Vutaw/An%C3%A1lisis-y-Seguridad?node-id=0-1&p=f&t=Hpy9SuGFySKbMYxk-0'
       },
+      // Segunda fila - 4 elementos
       {
         id: 'logistica-contenedores',
         name: 'LOGÍSTICA CONTENEDORES'
@@ -128,6 +135,7 @@ export const processData: Phase[] = [
         id: 'manifiesto',
         name: 'MANIFIESTO'
       },
+      // Tercera fila - 4 elementos
       {
         id: 'reexpediciones',
         name: 'REEXPEDICIONES'
@@ -145,6 +153,7 @@ export const processData: Phase[] = [
         id: 'creacion-do',
         name: 'CREACIÓN D.O',
       },
+      // Cuarta fila - 2 elementos
       {
         id: 'aprobacion-do',
         name: 'APROBACIÓN D.O',
@@ -161,6 +170,7 @@ export const processData: Phase[] = [
     icon: '🛡️',
     bgClass: 'bg-gradient-to-br from-yellow-50 to-yellow-100',
     processes: [
+      // Una sola fila - 3 elementos
       {
         id: 'seguridad-analisis',
         name: 'SEGURIDAD - ANÁLISIS DE VEHÍCULOS, CONDUCTORES, PROPIETARIOS Y POSEEDORES',
@@ -184,6 +194,7 @@ export const processData: Phase[] = [
     icon: '⚠️',
     bgClass: 'bg-gradient-to-br from-red-50 to-red-100',
     processes: [
+      // Una sola fila - 2 elementos
       {
         id: 'riesgos-seguros',
         name: 'RIESGOS Y SEGUROS',
