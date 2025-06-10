@@ -66,7 +66,8 @@ const ProcessFlowDiagram = () => {
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 p-5">
       <div className="max-w-7xl mx-auto bg-white rounded-2xl p-8 shadow-2xl">
         <h1 className="text-center text-slate-800 mb-8 text-4xl font-bold text-shadow">
-          🚛 Diagrama de Flujo - Proceso de Transporte GRUPO HUMADEA
+          🚛 Diagrama de Flujo - Proceso de Transporte 
+                          GRUPO HUMADEA
         </h1>
         
         <Summary />
