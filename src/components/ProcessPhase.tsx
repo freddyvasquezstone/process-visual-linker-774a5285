@@ -66,34 +66,118 @@ const ProcessPhase: React.FC<ProcessPhaseProps> = ({ phase, phaseNumber, onReord
     }
   };
 
+  // Función para organizar procesos en filas según la fase
+  const organizeProcessesInRows = () => {
+    const processes = phase.processes;
+    
+    switch (phase.id) {
+      case 'comercial':
+        return [
+          processes.slice(0, 4),   // Fila 1: 4 elementos
+          processes.slice(4, 5),   // Fila 2: 1 elemento
+          processes.slice(5, 8),   // Fila 3: 3 elementos
+          processes.slice(8, 10),  // Fila 4: 2 elementos
+          processes.slice(10, 12)  // Fila 5: 2 elementos
+        ];
+      
+      case 'operativa':
+        return [
+          processes.slice(0, 4),   // Fila 1: 4 elementos
+          processes.slice(4, 9),   // Fila 2: 5 elementos
+          processes.slice(9, 13),  // Fila 3: 4 elementos
+          processes.slice(13, 15)  // Fila 4: 2 elementos
+        ];
+      
+      case 'trafico-seguridad':
+        return [
+          processes.slice(0, 3)    // Fila única: 3 elementos
+        ];
+      
+      case 'gestion-riesgo':
+        return [
+          processes.slice(0, 2)    // Fila única: 2 elementos
+        ];
+      
+      case 'gestion-financiera':
+        return [
+          processes.slice(0, 2),   // Fila 1: 2 elementos
+          processes.slice(2, 5),   // Fila 2: 3 elementos
+          processes.slice(5, 7)    // Fila 3: 2 elementos
+        ];
+      
+      case 'procesos-adicionales':
+        return [
+          processes.slice(0, 3)    // Fila única: 3 elementos
+        ];
+      
+      case 'procesos-apoyo':
+        return [
+          processes.slice(0, 4),   // Fila 1: 4 elementos
+          processes.slice(4, 8)    // Fila 2: 4 elementos
+        ];
+      
+      default:
+        // Fallback para cualquier fase no especificada
+        return [processes];
+    }
+  };
+
+  const processRows = organizeProcessesInRows();
+
+  const renderProcessRow = (rowProcesses: any[], rowIndex: number) => {
+    const getGridCols = () => {
+      const count = rowProcesses.length;
+      switch (count) {
+        case 1: return 'grid-cols-1';
+        case 2: return 'grid-cols-1 md:grid-cols-2';
+        case 3: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3';
+        case 4: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4';
+        case 5: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5';
+        default: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
+      }
+    };
+
+    return (
+      <div 
+        key={`row-${rowIndex}`}
+        className={`grid ${getGridCols()} gap-4 mb-4`}
+        onDragOver={handleContainerDragOver}
+        onDrop={handleContainerDrop}
+        onDragLeave={handleDragLeave}
+      >
+        {rowProcesses.map((process, processIndex) => {
+          const globalIndex = processRows.slice(0, rowIndex).flat().length + processIndex;
+          return (
+            <div
+              key={process.id}
+              onDragOver={(e) => handleDragOver(e, globalIndex)}
+              onDrop={(e) => handleDrop(e, globalIndex)}
+              className={`transition-all duration-200 ${
+                dragOverIndex === globalIndex ? 'scale-105 bg-blue-100/50 rounded-lg p-1' : ''
+              }`}
+            >
+              <ProcessBox 
+                process={process}
+                phaseId={phase.id}
+                index={globalIndex}
+              />
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
   return (
     <div className={`mb-10 p-6 rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${phase.bgClass}`}>
       <div className="text-xl font-bold mb-4 pb-3 border-b-2 border-white/30 flex items-center">
         <span className="text-2xl mr-3">{phase.icon}</span>
         FASE {phaseNumber}: {phase.title}
       </div>
-      <div 
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 min-h-[100px]"
-        onDragOver={handleContainerDragOver}
-        onDrop={handleContainerDrop}
-        onDragLeave={handleDragLeave}
-      >
-        {phase.processes.map((process, index) => (
-          <div
-            key={process.id}
-            onDragOver={(e) => handleDragOver(e, index)}
-            onDrop={(e) => handleDrop(e, index)}
-            className={`transition-all duration-200 ${
-              dragOverIndex === index ? 'scale-105 bg-blue-100/50 rounded-lg p-1' : ''
-            }`}
-          >
-            <ProcessBox 
-              process={process}
-              phaseId={phase.id}
-              index={index}
-            />
-          </div>
-        ))}
+      <div className="mt-4">
+        {processRows.map((rowProcesses, rowIndex) => 
+          rowProcesses.length > 0 && renderProcessRow(rowProcesses, rowIndex)
+        )}
       </div>
     </div>
   );
