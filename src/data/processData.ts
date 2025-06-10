@@ -129,7 +129,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/19iJTZI_c3j0huuWF0HU9VcQi_Ku_SBhi/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/FexMN0ZtIh1Cp4CbV5jIOW/Creacion-de-Vehiculo?node-id=0-1&p=f&t=33efp8dlAvYMyk0w-0'
       },
-      
+
       {
         id: 'activacion-vehiculo',
         name: 'ACTIVACIÓN VEHÍCULO',
@@ -187,7 +187,12 @@ export const processData: Phase[] = [
     icon: '📍',
     bgClass: 'bg-gradient-to-br from-yellow-50 to-yellow-100',
     processes: [
-      
+      {
+        id: 'seguridad-analisis',
+        name: 'SEGURIDAD - ANÁLISIS VEHÍCULOS, POSEEDORES',
+        pdfLink: 'https://drive.google.com/file/d/1IfYS0ZyDnsLs4k1lfjU1b4KnHVVjivpx/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/hQeE8dzKmGoItzKi2Vutaw/An%C3%A1lisis-y-Seguridad?node-id=0-1&p=f&t=Hpy9SuGFySKbMYxk-0'
+      },
       {
         id: 'tracking-seguridad',
         name: 'TRACKING SEGURIDAD TRÁFICO',
