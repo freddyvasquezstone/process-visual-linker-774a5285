@@ -127,6 +127,7 @@ export const processData: Phase[] = [
         id: 'creacion-vehiculo',
         name: 'CREACIÓN VEHÍCULO',
         pdfLink: 'https://drive.google.com/file/d/19iJTZI_c3j0huuWF0HU9VcQi_Ku_SBhi/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/FexMN0ZtIh1Cp4CbV5jIOW/Creacion-de-Vehiculo?node-id=0-1&p=f&t=33efp8dlAvYMyk0w-0'
       },
       {
         id: 'activacion-vehiculo',
