@@ -245,7 +245,7 @@ const Summary = () => {
 
         {/* Resumen Procesos de Apoyo */}
         <div>
-          <h4 className="text-lg font-bold text-gray-600 mb-2">Fase 7 - Procesos de Apoyo</h4>
+          <h4 className="text-lg font-bold text-gray-600 mb-2">Procesos de Apoyo</h4>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
             <div className="bg-green-50 p-3 rounded-lg text-center border border-green-200">
               <div className="text-lg font-bold text-green-600">{supportSummary.completos}</div>
