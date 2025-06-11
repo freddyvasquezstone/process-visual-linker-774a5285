@@ -15,7 +15,8 @@ const Summary = () => {
       'tracking-seguridad',
       'servicio-cliente',
       'novedades-cupo',
-      'novedades-op'
+      'novedades-op',
+      'novedades-liquidacion'
     ];
 
     processData.forEach(phase => {
@@ -63,7 +64,8 @@ const Summary = () => {
       'tracking-seguridad',
       'servicio-cliente',
       'novedades-cupo',
-      'novedades-op'
+      'novedades-op',
+      'novedades-liquidacion'
     ];
 
     processData.forEach(phase => {
