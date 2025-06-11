@@ -219,10 +219,10 @@ export const processData: Phase[] = [
         id: 'anticipo',
         name: 'CREACIÓN DE ANTICIPO'
       },
-      //{
-      //  id: 'giros-anticipos',
-      //  name: 'GIROS ANTICIPOS'
-      //},
+      {
+        id: 'giros-anticipos',
+        name: 'GIROS ANTICIPOS'
+      },
       {
         id: 'cumplidos',
         name: 'CUMPLIDOS Y LIQUIDACIONES',
