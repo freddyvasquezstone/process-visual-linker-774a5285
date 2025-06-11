@@ -3,7 +3,7 @@ import { Phase } from '../types/process';
 export const processData: Phase[] = [
   {
     id: 'comercial',
-    title: 'FASE 1: COMERCIAL',
+    title: 'COMERCIAL',
     icon: '👥',
     bgClass: 'bg-gradient-to-br from-blue-50 to-blue-100',
     processes: [
@@ -84,7 +84,7 @@ export const processData: Phase[] = [
   },
   {
     id: 'operativa',
-    title: 'FASE 2: OPERATIVA',
+    title: 'OPERATIVA',
     icon: '🚛',
     bgClass: 'bg-gradient-to-br from-green-50 to-green-100',
     processes: [
