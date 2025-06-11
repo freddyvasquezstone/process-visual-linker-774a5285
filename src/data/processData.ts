@@ -79,6 +79,8 @@ export const processData: Phase[] = [
       {
         id: 'tracking-comercial',
         name: 'TRACKING COMERCIAL',
+        pdfLink: 'https://drive.google.com/file/d/1jNQxJ0exP-scMXSpIbjsPwF3UDPSPWoZ/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/TGOina1BTCGigymBxoV0I6/Tracking-Comercial-HUMADEA?node-id=0-1&p=f&t=ZC1Ha9JmjqZ695ay-0'
       }
     ]
   },
