@@ -193,6 +193,8 @@ export const processData: Phase[] = [
       {
         id: 'tracking-seguridad',
         name: 'TRACKING SEGURIDAD Y TRÁFICO',
+        pdfLink: 'https://drive.google.com/file/d/1_zqS7-hHL_Cd_DjDXbjEszHGp_BCmBeQ/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/wlQ0QLIByXhLmYmhjOyzIw/Tracking-Seguridad---Trafico?node-id=0-1&p=f&t=jiaXEAdMx1Px0mzy-0'
       }
     ]
   },
