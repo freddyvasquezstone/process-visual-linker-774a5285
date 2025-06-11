@@ -173,7 +173,7 @@ export const processData: Phase[] = [
   },
   {
     id: 'trafico-seguridad',
-    title: 'FASE 3: TRÁFICO Y SEGURIDAD',
+    title: 'TRÁFICO Y SEGURIDAD',
     icon: '🛡️',
     bgClass: 'bg-gradient-to-br from-yellow-50 to-yellow-100',
     processes: [
@@ -198,7 +198,7 @@ export const processData: Phase[] = [
   },
   {
     id: 'gestion-riesgo',
-    title: 'FASE 4: GESTIÓN DEL RIESGO',
+    title: 'GESTIÓN DEL RIESGO',
     icon: '⚠️',
     bgClass: 'bg-gradient-to-br from-red-50 to-red-100',
     processes: [
@@ -217,7 +217,7 @@ export const processData: Phase[] = [
   },
   {
     id: 'gestion-financiera',
-    title: 'FASE 5: GESTIÓN FINANCIERA',
+    title: 'GESTIÓN FINANCIERA',
     icon: '💵',
     bgClass: 'bg-gradient-to-br from-green-50 to-green-200',
     processes: [
@@ -257,7 +257,7 @@ export const processData: Phase[] = [
   },
   {
     id: 'procesos-adicionales',
-    title: 'FASE 6: GESTIÓN PROCESOS ADICIONALES',
+    title: 'GESTIÓN PROCESOS ADICIONALES',
     icon: '⚙️',
     bgClass: 'bg-gradient-to-br from-purple-50 to-purple-100',
     processes: [
@@ -277,7 +277,7 @@ export const processData: Phase[] = [
   },
   {
     id: 'procesos-apoyo',
-    title: 'FASE PROCESOS DE APOYO',
+    title: 'PROCESOS DE APOYO',
     icon: '🛠️',
     bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
     processes: [
