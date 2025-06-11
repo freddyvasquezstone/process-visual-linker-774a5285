@@ -55,6 +55,7 @@ export const processData: Phase[] = [
       {
         id: 'liquidos',
         name: 'LÍQUIDOS',
+        pdfLink: 'https://drive.google.com/file/d/17P_ELAB0Q2xBlk7xv4TolH98z914aiT-/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/cPli8EvLlViIEpm28jhcq1/L%C3%ADquidos-Humadea?node-id=603-139&t=ky1rpTdB8m7Bs6Zu-0'
       },
       // Cuarta fila - 2 elementos (uno grande y uno amarillo para novedades)
@@ -180,6 +181,7 @@ export const processData: Phase[] = [
       {
         id: 'seguridad-trafico',
         name: 'SEGURIDAD - TRÁFICO',
+        pdfLink: 'https://drive.google.com/file/d/1owCaQnpG2DEkWtwbzaaNCLfhXGrIJJxQ/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/ZStCeumbdvrJmf0SfstQ83/Seguridad-y-Trafico?node-id=0-1&t=ntrVYURgfKn1Xayl-0'
       },
       {
@@ -198,6 +200,7 @@ export const processData: Phase[] = [
       {
         id: 'riesgos-seguros',
         name: 'RIESGOS Y SEGUROS',
+        pdfLink: 'https://drive.google.com/file/d/1Lyd5bVxzz6HqbcPaV7gdSHL5PMO07h7C/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/yeUQMGsMYRK4HzkaYusITP/Seguros-Humadea?node-id=0-1&p=f&t=Fx8vFMfx4ySmmSKN-0'
       },
       {
