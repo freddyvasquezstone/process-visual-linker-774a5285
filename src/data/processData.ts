@@ -139,8 +139,8 @@ export const processData: Phase[] = [
       {
         id: 'manifiesto',
         name: 'MANIFIESTO',
-        pdfLink: 'https://drive.google.com/file/d/12T0Y3ibhsWlrBD0X89tIOLheaJySO1Ok/view?usp=drive_link',
-        //figmaLink: ''
+        pdfLink: 'https://drive.google.com/file/d/1gqTyuZkG3i4WrPrBfmQHmQ6whOo4LATe/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/IoYDWKlOs9CtCDAovyhyez/Manifiestos-Humadea?node-id=0-1&p=f&t=aeFhI4k2ZgsGIcNi-0'
       },
       // Tercera fila - 4 elementos
       {
