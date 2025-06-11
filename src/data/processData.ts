@@ -120,7 +120,9 @@ export const processData: Phase[] = [
       },
       {
         id: 'control-precintos',
-        name: 'CONTROL DE PRECINTOS'
+        name: 'CONTROL DE PRECINTOS',
+        pdfLink: 'https://drive.google.com/file/d/1joBTgY3N-8lT9-m3xzlXatHGnhZK_gmq/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/9w4zsTYXko8nUofbfzy69Q/Control-de-Precintos-Humadea?node-id=0-1&p=f&t=OGb8gi55LNGlanx9-0'
       },
       {
         id: 'orden-cargue',
@@ -131,10 +133,14 @@ export const processData: Phase[] = [
       {
         id: 'remesa',
         name: 'REMESA',
+        pdfLink: 'https://drive.google.com/file/d/1lUDhDf9SE1lZGAB-bMUUNkzoD5q2siv-/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/NhIRrig9LAoDR8YiFT1hCu/Remesas-Humadea?node-id=0-1&p=f&t=SLMcPANSWgZCwGBh-0'
       },
       {
         id: 'manifiesto',
-        name: 'MANIFIESTO'
+        name: 'MANIFIESTO',
+        pdfLink: 'https://drive.google.com/file/d/12T0Y3ibhsWlrBD0X89tIOLheaJySO1Ok/view?usp=drive_link',
+        //figmaLink: ''
       },
       // Tercera fila - 4 elementos
       {
