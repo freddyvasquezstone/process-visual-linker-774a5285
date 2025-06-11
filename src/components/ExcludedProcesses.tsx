@@ -24,6 +24,12 @@ const ExcludedProcesses = () => {
     {
       id: 'servicio-cliente-excluded',
       name: 'SERVICIO AL CLIENTE'
+    },
+    {
+        id: 'novedades-cupo',
+        name: 'NOVEDADES CUPO DE CLIENTES',
+        pdfLink:'https://drive.google.com/file/d/1N-d71Hu3z428oE1bLJimWiiIQmZUeOmh/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/O30JXnUaUExEHptYRfcqTY/Novedades-Cupo-de-Cliente?node-id=0-1&p=f&t=RiMP9W5iSAtrdE3b-0'
     }
   ];
 
