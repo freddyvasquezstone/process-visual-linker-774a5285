@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { processData } from '../data/processData';
 import { Process } from '../types/process';
@@ -88,34 +87,42 @@ const Summary = () => {
   const summary = calculateSummary();
   const excludedSummary = calculateExcludedSummary();
 
+  // Calcular el resumen total combinado
+  const totalSummary = {
+    completos: summary.completos + excludedSummary.completos,
+    parciales: summary.parciales + excludedSummary.parciales,
+    pendientes: summary.pendientes + excludedSummary.pendientes,
+    total: summary.total + excludedSummary.total
+  };
+
   return (
     <div className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl shadow-lg border border-blue-100">
       <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">📊 Resumen del Estado de Procesos</h2>
       
-      {/* Resumen Principal */}
+      {/* Resumen Total Combinado */}
       <div className="mb-6">
-        <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">Procesos Principales</h3>
+        <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">Resumen General</h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="bg-green-100 p-4 rounded-lg text-center border-l-4 border-green-500">
-            <div className="text-2xl font-bold text-green-700">{summary.completos}</div>
+            <div className="text-2xl font-bold text-green-700">{totalSummary.completos}</div>
             <div className="text-sm font-medium text-green-600">Completados</div>
             <div className="text-xs text-green-500 mt-1">PDF + Figma</div>
           </div>
           
           <div className="bg-orange-100 p-4 rounded-lg text-center border-l-4 border-orange-500">
-            <div className="text-2xl font-bold text-orange-700">{summary.parciales}</div>
+            <div className="text-2xl font-bold text-orange-700">{totalSummary.parciales}</div>
             <div className="text-sm font-medium text-orange-600">Parciales</div>
             <div className="text-xs text-orange-500 mt-1">Solo PDF o Figma</div>
           </div>
           
           <div className="bg-yellow-100 p-4 rounded-lg text-center border-l-4 border-yellow-500">
-            <div className="text-2xl font-bold text-yellow-700">{summary.pendientes}</div>
+            <div className="text-2xl font-bold text-yellow-700">{totalSummary.pendientes}</div>
             <div className="text-sm font-medium text-yellow-600">Pendientes</div>
             <div className="text-xs text-yellow-500 mt-1">Sin enlaces</div>
           </div>
           
           <div className="bg-blue-100 p-4 rounded-lg text-center border-l-4 border-blue-500">
-            <div className="text-2xl font-bold text-blue-700">{summary.total}</div>
+            <div className="text-2xl font-bold text-blue-700">{totalSummary.total}</div>
             <div className="text-sm font-medium text-blue-600">Total</div>
             <div className="text-xs text-blue-500 mt-1">Procesos</div>
           </div>
@@ -123,33 +130,74 @@ const Summary = () => {
         
         <div className="mt-4 text-center">
           <div className="text-sm text-gray-600">
-            Progreso: <span className="font-semibold text-green-600">{Math.round((summary.completos / summary.total) * 100)}%</span> completado
+            Progreso General: <span className="font-semibold text-green-600">{Math.round((totalSummary.completos / totalSummary.total) * 100)}%</span> completado
           </div>
         </div>
       </div>
 
-      {/* Resumen Procesos Excluidos */}
+      {/* Desglose por categorías */}
       <div className="border-t border-gray-200 pt-4">
-        <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">Procesos Adicionales</h3>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <div className="bg-green-50 p-3 rounded-lg text-center border border-green-200">
-            <div className="text-lg font-bold text-green-600">{excludedSummary.completos}</div>
-            <div className="text-xs font-medium text-green-500">Completados</div>
+        <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">Desglose por Categorías</h3>
+        
+        {/* Resumen Principal */}
+        <div className="mb-4">
+          <h4 className="text-md font-medium text-gray-600 mb-2">Procesos Principales</h4>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+            <div className="bg-green-50 p-3 rounded-lg text-center border border-green-200">
+              <div className="text-lg font-bold text-green-600">{summary.completos}</div>
+              <div className="text-xs font-medium text-green-500">Completados</div>
+            </div>
+            
+            <div className="bg-orange-50 p-3 rounded-lg text-center border border-orange-200">
+              <div className="text-lg font-bold text-orange-600">{summary.parciales}</div>
+              <div className="text-xs font-medium text-orange-500">Parciales</div>
+            </div>
+            
+            <div className="bg-yellow-50 p-3 rounded-lg text-center border border-yellow-200">
+              <div className="text-lg font-bold text-yellow-600">{summary.pendientes}</div>
+              <div className="text-xs font-medium text-yellow-500">Pendientes</div>
+            </div>
+            
+            <div className="bg-blue-50 p-3 rounded-lg text-center border border-blue-200">
+              <div className="text-lg font-bold text-blue-600">{summary.total}</div>
+              <div className="text-xs font-medium text-blue-500">Total</div>
+            </div>
           </div>
-          
-          <div className="bg-orange-50 p-3 rounded-lg text-center border border-orange-200">
-            <div className="text-lg font-bold text-orange-600">{excludedSummary.parciales}</div>
-            <div className="text-xs font-medium text-orange-500">Parciales</div>
+          <div className="mt-2 text-center">
+            <div className="text-xs text-gray-500">
+              Progreso: <span className="font-medium text-green-500">{Math.round((summary.completos / summary.total) * 100)}%</span>
+            </div>
           </div>
-          
-          <div className="bg-yellow-50 p-3 rounded-lg text-center border border-yellow-200">
-            <div className="text-lg font-bold text-yellow-600">{excludedSummary.pendientes}</div>
-            <div className="text-xs font-medium text-yellow-500">Pendientes</div>
+        </div>
+
+        {/* Resumen Procesos Excluidos */}
+        <div>
+          <h4 className="text-md font-medium text-gray-600 mb-2">Procesos Adicionales</h4>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+            <div className="bg-green-50 p-3 rounded-lg text-center border border-green-200">
+              <div className="text-lg font-bold text-green-600">{excludedSummary.completos}</div>
+              <div className="text-xs font-medium text-green-500">Completados</div>
+            </div>
+            
+            <div className="bg-orange-50 p-3 rounded-lg text-center border border-orange-200">
+              <div className="text-lg font-bold text-orange-600">{excludedSummary.parciales}</div>
+              <div className="text-xs font-medium text-orange-500">Parciales</div>
+            </div>
+            
+            <div className="bg-yellow-50 p-3 rounded-lg text-center border border-yellow-200">
+              <div className="text-lg font-bold text-yellow-600">{excludedSummary.pendientes}</div>
+              <div className="text-xs font-medium text-yellow-500">Pendientes</div>
+            </div>
+            
+            <div className="bg-gray-50 p-3 rounded-lg text-center border border-gray-200">
+              <div className="text-lg font-bold text-gray-600">{excludedSummary.total}</div>
+              <div className="text-xs font-medium text-gray-500">Total</div>
+            </div>
           </div>
-          
-          <div className="bg-gray-50 p-3 rounded-lg text-center border border-gray-200">
-            <div className="text-lg font-bold text-gray-600">{excludedSummary.total}</div>
-            <div className="text-xs font-medium text-gray-500">Total Adicionales</div>
+          <div className="mt-2 text-center">
+            <div className="text-xs text-gray-500">
+              Progreso: <span className="font-medium text-green-500">{excludedSummary.total > 0 ? Math.round((excludedSummary.completos / excludedSummary.total) * 100) : 0}%</span>
+            </div>
           </div>
         </div>
       </div>
