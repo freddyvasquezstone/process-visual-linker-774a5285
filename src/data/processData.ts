@@ -238,6 +238,8 @@ export const processData: Phase[] = [
       {
         id: 'cumplidos',
         name: 'CUMPLIDOS Y LIQUIDACIONES',
+        pdfLink: 'https://drive.google.com/file/d/1A8DWOEvn2clC9HyqnIcwvn73xHmA5lzE/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/SnEm5r2rhkbvaAEViTOvWY/Cumplidos-Liquidaciones-Humadea?node-id=0-1&p=f&t=bHJughIyLoAkZC3Y-0'
       },
       {
         id: 'novedades-liquidacion',
