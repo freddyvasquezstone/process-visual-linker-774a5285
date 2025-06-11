@@ -343,15 +343,3 @@ export const coreBusinessDiagram = {
   }
 };
 
-export const ventajasStone = {
-  id: 'ventajas-stone',
-  title: 'VENTAJAS STONE',
-  icon: '🏢',
-  bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
-  process: {
-    id: 'core-negocio',
-    name: 'VENTAJAS STONE',
-    pdfLink: 'https://stone-system-insights.lovable.app/',
-    figmaLink: 'https://stone-system-insights.lovable.app/'
-  }
-};
