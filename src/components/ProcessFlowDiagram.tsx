@@ -80,7 +80,7 @@ const ProcessFlowDiagram = () => {
         <Tabs defaultValue="main-processes" className="w-full">
           <TabsList className="grid w-full grid-cols-2 mb-6">
             <TabsTrigger value="main-processes">Procesos Principales</TabsTrigger>
-            <TabsTrigger value="excluded-processes">Procesos Excluidos</TabsTrigger>
+            <TabsTrigger value="excluded-processes">Procesos Adicionales</TabsTrigger>
           </TabsList>
           
           <TabsContent value="main-processes">
