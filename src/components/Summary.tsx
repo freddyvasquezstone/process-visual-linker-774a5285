@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { processData } from '../data/processData';
 import { Process } from '../types/process';
@@ -94,8 +95,39 @@ const Summary = () => {
     };
   };
 
+  const calculateSupportSummary = () => {
+    let completosApoyo = 0;
+    let parcialesApoyo = 0;
+    let pendientesApoyo = 0;
+
+    const supportPhase = processData.find(phase => phase.id === 'procesos-apoyo');
+    
+    if (supportPhase) {
+      supportPhase.processes.forEach((process: Process) => {
+        const hasAllLinks = process.pdfLink && process.figmaLink;
+        const hasNoLinks = !process.pdfLink && !process.figmaLink;
+        
+        if (hasAllLinks) {
+          completosApoyo++;
+        } else if (hasNoLinks) {
+          pendientesApoyo++;
+        } else {
+          parcialesApoyo++;
+        }
+      });
+    }
+
+    return {
+      completos: completosApoyo,
+      parciales: parcialesApoyo,
+      pendientes: pendientesApoyo,
+      total: supportPhase ? supportPhase.processes.length : 0
+    };
+  };
+
   const summary = calculateSummary();
   const excludedSummary = calculateExcludedSummary();
+  const supportSummary = calculateSupportSummary();
 
   // Calcular el resumen total combinado
   const totalSummary = {
@@ -111,7 +143,7 @@ const Summary = () => {
       
       {/* Resumen Total Combinado */}
       <div className="mb-6">
-        <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">Resumen General</h3>
+        <h3 className="text-xl font-bold text-gray-700 mb-3 text-center">Resumen General</h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="bg-green-100 p-4 rounded-lg text-center border-l-4 border-green-500">
             <div className="text-2xl font-bold text-green-700">{totalSummary.completos}</div>
@@ -139,19 +171,19 @@ const Summary = () => {
         </div>
         
         <div className="mt-4 text-center">
-          <div className="text-sm text-gray-600">
-            Progreso General: <span className="font-semibold text-green-600">{Math.round((totalSummary.completos / totalSummary.total) * 100)}%</span> completado
+          <div className="text-lg font-bold text-gray-700">
+            Progreso General: <span className="text-xl font-black text-green-600">{Math.round((totalSummary.completos / totalSummary.total) * 100)}%</span> completado
           </div>
         </div>
       </div>
 
       {/* Desglose por categorías */}
       <div className="border-t border-gray-200 pt-4">
-        <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">Desglose por Categorías</h3>
+        <h3 className="text-xl font-bold text-gray-700 mb-3 text-center">Desglose por Categorías</h3>
         
         {/* Resumen Principal */}
         <div className="mb-4">
-          <h4 className="text-md font-medium text-gray-600 mb-2">Procesos Principales</h4>
+          <h4 className="text-lg font-bold text-gray-600 mb-2">Procesos Principales</h4>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
             <div className="bg-green-50 p-3 rounded-lg text-center border border-green-200">
               <div className="text-lg font-bold text-green-600">{summary.completos}</div>
@@ -174,15 +206,15 @@ const Summary = () => {
             </div>
           </div>
           <div className="mt-2 text-center">
-            <div className="text-xs text-gray-500">
-              Progreso: <span className="font-medium text-green-500">{Math.round((summary.completos / summary.total) * 100)}%</span>
+            <div className="text-sm font-bold text-gray-600">
+              Progreso: <span className="text-lg font-black text-green-600">{Math.round((summary.completos / summary.total) * 100)}%</span>
             </div>
           </div>
         </div>
 
         {/* Resumen Procesos Excluidos */}
-        <div>
-          <h4 className="text-md font-medium text-gray-600 mb-2">Procesos Adicionales</h4>
+        <div className="mb-4">
+          <h4 className="text-lg font-bold text-gray-600 mb-2">Procesos Adicionales</h4>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
             <div className="bg-green-50 p-3 rounded-lg text-center border border-green-200">
               <div className="text-lg font-bold text-green-600">{excludedSummary.completos}</div>
@@ -205,8 +237,39 @@ const Summary = () => {
             </div>
           </div>
           <div className="mt-2 text-center">
-            <div className="text-xs text-gray-500">
-              Progreso: <span className="font-medium text-green-500">{excludedSummary.total > 0 ? Math.round((excludedSummary.completos / excludedSummary.total) * 100) : 0}%</span>
+            <div className="text-sm font-bold text-gray-600">
+              Progreso: <span className="text-lg font-black text-green-600">{excludedSummary.total > 0 ? Math.round((excludedSummary.completos / excludedSummary.total) * 100) : 0}%</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Resumen Procesos de Apoyo */}
+        <div>
+          <h4 className="text-lg font-bold text-gray-600 mb-2">Fase 7 - Procesos de Apoyo</h4>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+            <div className="bg-green-50 p-3 rounded-lg text-center border border-green-200">
+              <div className="text-lg font-bold text-green-600">{supportSummary.completos}</div>
+              <div className="text-xs font-medium text-green-500">Completados</div>
+            </div>
+            
+            <div className="bg-orange-50 p-3 rounded-lg text-center border border-orange-200">
+              <div className="text-lg font-bold text-orange-600">{supportSummary.parciales}</div>
+              <div className="text-xs font-medium text-orange-500">Parciales</div>
+            </div>
+            
+            <div className="bg-yellow-50 p-3 rounded-lg text-center border border-yellow-200">
+              <div className="text-lg font-bold text-yellow-600">{supportSummary.pendientes}</div>
+              <div className="text-xs font-medium text-yellow-500">Pendientes</div>
+            </div>
+            
+            <div className="bg-purple-50 p-3 rounded-lg text-center border border-purple-200">
+              <div className="text-lg font-bold text-purple-600">{supportSummary.total}</div>
+              <div className="text-xs font-medium text-purple-500">Total</div>
+            </div>
+          </div>
+          <div className="mt-2 text-center">
+            <div className="text-sm font-bold text-gray-600">
+              Progreso: <span className="text-lg font-black text-green-600">{supportSummary.total > 0 ? Math.round((supportSummary.completos / supportSummary.total) * 100) : 0}%</span>
             </div>
           </div>
         </div>
