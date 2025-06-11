@@ -110,7 +110,6 @@ const ProcessFlowDiagram = () => {
             ))}
             
             <Legend />
-            <Summary />
           </TabsContent>
           
           <TabsContent value="excluded-processes">
@@ -118,7 +117,7 @@ const ProcessFlowDiagram = () => {
           </TabsContent>
         </Tabs>
 
-        
+        <Summary />
       </div>
     </div>
   );
