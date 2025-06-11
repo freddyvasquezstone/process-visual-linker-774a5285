@@ -30,7 +30,13 @@ const ExcludedProcesses = () => {
         name: 'NOVEDADES CUPO DE CLIENTES',
         pdfLink:'https://drive.google.com/file/d/1N-d71Hu3z428oE1bLJimWiiIQmZUeOmh/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/O30JXnUaUExEHptYRfcqTY/Novedades-Cupo-de-Cliente?node-id=0-1&p=f&t=RiMP9W5iSAtrdE3b-0'
-    }
+    },
+    {
+        id: 'novedades-op',
+        name: 'NOVEDADES ORDEN DE PRODUCCIÓN',
+        pdfLink: 'https://drive.google.com/file/d/1kpuejtZcxDPJdWS2G9MlAtp0F9Ki1Ckp/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/UAE9bV4404qRICSBipbLVy/Novedades-Orden-de-Producci%C3%B3n?t=jl9oTRqoBmGbjhyK-0'
+      },
   ];
 
   return (
