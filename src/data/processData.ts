@@ -351,5 +351,7 @@ export const ventajasStone = {
   process: {
     id: 'ventajas-stone',
     name: 'VENTAJAS STONE',
+    pdfLink: 'https://stone-system-insights.lovable.app/',
+    figmaLink: 'https://stone-system-insights.lovable.app/'
   }
 };
