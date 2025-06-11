@@ -223,11 +223,15 @@ export const processData: Phase[] = [
     processes: [
       {
         id: 'anticipo',
-        name: 'CREACIÓN DE ANTICIPO'
+        name: 'CREACIÓN DE ANTICIPO',
+        pdfLink: 'https://drive.google.com/file/d/14uaO8hwq-G2zL9CDwpTbBeHe80i8LgmH/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/yeUQMGsMYRK4HzkaYusITP/Seguros-Humadea?node-id=0-1&p=f&t=Fx8vFMfx4ySmmSKN-0'
       },
       {
         id: 'giros-anticipos',
-        name: 'GIROS ANTICIPOS'
+        name: 'GIROS ANTICIPOS',
+        pdfLink: 'https://drive.google.com/file/d/14uaO8hwq-G2zL9CDwpTbBeHe80i8LgmH/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/yeUQMGsMYRK4HzkaYusITP/Seguros-Humadea?node-id=0-1&p=f&t=Fx8vFMfx4ySmmSKN-0'
       },
       {
         id: 'cumplidos',
