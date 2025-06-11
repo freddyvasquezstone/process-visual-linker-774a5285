@@ -11,7 +11,7 @@ const Summary = () => {
 
     processData.forEach(phase => {
       // Excluir las áreas de apoyo del cálculo del resumen
-      if (phase.id === 'support-areas') {
+      if (phase.id === 'procesos-apoyo') {
         return;
       }
       
