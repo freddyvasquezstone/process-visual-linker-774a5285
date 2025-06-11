@@ -116,7 +116,7 @@ const Summary = () => {
 
       {/* Resumen Procesos Excluidos */}
       <div className="border-t border-gray-200 pt-4">
-        <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">Procesos Excluidos</h3>
+        <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">Procesos Adicionales</h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="bg-green-50 p-3 rounded-lg text-center border border-green-200">
             <div className="text-lg font-bold text-green-600">{excludedSummary.completos}</div>
@@ -135,7 +135,7 @@ const Summary = () => {
           
           <div className="bg-gray-50 p-3 rounded-lg text-center border border-gray-200">
             <div className="text-lg font-bold text-gray-600">{excludedSummary.total}</div>
-            <div className="text-xs font-medium text-gray-500">Total Excluidos</div>
+            <div className="text-xs font-medium text-gray-500">Total Adicionales</div>
           </div>
         </div>
       </div>
