@@ -15,11 +15,14 @@ const ExcludedProcesses = () => {
     {
       id: 'seguridad-trafico-excluded',
       name: 'SEGURIDAD - TRÁFICO',
+      pdfLink: 'https://drive.google.com/file/d/1owCaQnpG2DEkWtwbzaaNCLfhXGrIJJxQ/view?usp=drive_link',
       figmaLink: 'https://www.figma.com/board/ZStCeumbdvrJmf0SfstQ83/Seguridad-y-Trafico?node-id=0-1&t=ntrVYURgfKn1Xayl-0'
     },
     {
       id: 'tracking-seguridad-excluded',
-      name: 'TRACKING SEGURIDAD Y TRÁFICO'
+      name: 'TRACKING SEGURIDAD Y TRÁFICO',
+      pdfLink: 'https://drive.google.com/file/d/1_zqS7-hHL_Cd_DjDXbjEszHGp_BCmBeQ/view?usp=drive_link',
+      figmaLink: 'https://www.figma.com/board/wlQ0QLIByXhLmYmhjOyzIw/Tracking-Seguridad---Trafico?node-id=0-1&p=f&t=jiaXEAdMx1Px0mzy-0'
     },
     {
       id: 'servicio-cliente-excluded',
