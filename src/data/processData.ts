@@ -343,3 +343,13 @@ export const coreBusinessDiagram = {
   }
 };
 
+export const ventajasStone = {
+  id: 'ventajas-stone-diagram',
+  title: 'VENTAJAS STONE',
+  icon: '⭐',
+  bgClass: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
+  process: {
+    id: 'ventajas-stone',
+    name: 'VENTAJAS STONE',
+  }
+};

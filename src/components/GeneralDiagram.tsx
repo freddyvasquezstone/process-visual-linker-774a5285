@@ -1,12 +1,12 @@
 
 import React from 'react';
 import ProcessBox from './ProcessBox';
-import { generalDiagram, coreBusinessDiagram } from '../data/processData';
+import { generalDiagram, coreBusinessDiagram, ventajasStone } from '../data/processData';
 
 const GeneralDiagram = () => {
   return (
     <div className="mb-10">
-      {/* Arquitectura General Procesos Stone con ambas opciones */}
+      {/* Arquitectura General Procesos Stone con las tres opciones */}
       <div className={`p-6 rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${generalDiagram.bgClass}`}>
         <div className="text-xl font-bold mb-4 pb-3 border-b-2 border-white/30 flex items-center">
           <span className="text-2xl mr-3">{generalDiagram.icon}</span>
@@ -24,6 +24,12 @@ const GeneralDiagram = () => {
             process={coreBusinessDiagram.process}
             phaseId="general"
             index={1}
+          />
+          <ProcessBox 
+            key={ventajasStone.process.id}
+            process={ventajasStone.process}
+            phaseId="general"
+            index={2}
           />
         </div>
       </div>
