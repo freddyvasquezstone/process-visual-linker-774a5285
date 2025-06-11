@@ -139,7 +139,7 @@ const Summary = () => {
 
   return (
     <div className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl shadow-lg border border-blue-100">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">📊 Resumen del Estado de Procesos</h2>
+      <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">📊 Resumen del Estado de Procesos - Análisis de Información y Estructuración</h2>
       
       {/* Resumen Total Combinado */}
       <div className="mb-6">
