@@ -51,36 +51,42 @@ const Summary = () => {
   };
 
   const calculateExcludedSummary = () => {
-    // Procesos excluidos - estos son los que están en la nueva pestaña
-    const excludedProcesses = [
-      { pdfLink: 'https://drive.google.com/file/d/12rUQY-YVWv1-KUxWWgpgowYqA10RBD9v/view?usp=drive_link', figmaLink: 'https://www.figma.com/board/dsVuiJid3C4MIuo0iCRq8F/Enturnamiento---HUMAEDA?node-id=7-2246&t=hhrXbVoLnWJacgRS-0' }, // Enturnamiento
-      { figmaLink: 'https://www.figma.com/board/ZStCeumbdvrJmf0SfstQ83/Seguridad-y-Trafico?node-id=0-1&t=ntrVYURgfKn1Xayl-0' }, // Seguridad - Tráfico
-      {}, // Tracking Seguridad y Tráfico
-      {} // Servicio al Cliente
-    ];
-
     let completosExcluidos = 0;
     let parcialesExcluidos = 0;
     let pendientesExcluidos = 0;
 
-    excludedProcesses.forEach(process => {
-      const hasAllLinks = process.pdfLink && process.figmaLink;
-      const hasNoLinks = !process.pdfLink && !process.figmaLink;
-      
-      if (hasAllLinks) {
-        completosExcluidos++;
-      } else if (hasNoLinks) {
-        pendientesExcluidos++;
-      } else {
-        parcialesExcluidos++;
-      }
+    // IDs de los procesos que están en la pestaña adicional
+    const excludedProcessIds = [
+      'enturnamiento',
+      'seguridad-trafico',
+      'tracking-seguridad',
+      'servicio-cliente',
+      'novedades-cupo'
+    ];
+
+    processData.forEach(phase => {
+      phase.processes.forEach((process: Process) => {
+        // Solo contar los procesos que están en la pestaña adicional
+        if (excludedProcessIds.includes(process.id)) {
+          const hasAllLinks = process.pdfLink && process.figmaLink;
+          const hasNoLinks = !process.pdfLink && !process.figmaLink;
+          
+          if (hasAllLinks) {
+            completosExcluidos++;
+          } else if (hasNoLinks) {
+            pendientesExcluidos++;
+          } else {
+            parcialesExcluidos++;
+          }
+        }
+      });
     });
 
     return {
       completos: completosExcluidos,
       parciales: parcialesExcluidos,
       pendientes: pendientesExcluidos,
-      total: excludedProcesses.length
+      total: excludedProcessIds.length
     };
   };
 
