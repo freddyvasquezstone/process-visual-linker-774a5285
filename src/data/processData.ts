@@ -307,7 +307,7 @@ export const processData: Phase[] = [
       },
       {
         id: 'gestion-humana',
-        name: 'GESTIÓN HUMANA',
+        name: 'NÓMINA',
       },
       {
         id: 'gestion-calidad',
