@@ -5,7 +5,9 @@ import ProcessPhase from './ProcessPhase';
 import GeneralDiagram from './GeneralDiagram';
 import Legend from './Legend';
 import Summary from './Summary';
+import ExcludedProcesses from './ExcludedProcesses';
 import { Phase, Process } from '../types/process';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ProcessFlowDiagram = () => {
   const [phases, setPhases] = useState<Phase[]>(processData);
@@ -75,32 +77,45 @@ const ProcessFlowDiagram = () => {
         
         <Summary />
         
-        <GeneralDiagram />
-        
-        {phases.map((phase, index) => (
-          <React.Fragment key={phase.id}>
-            <ProcessPhase 
-              phase={phase}
-              phaseNumber={index + 1}
-              onReorderProcesses={handleReorderProcesses}
-            />
-            {index < phases.length - 1 && (
-              <div className="text-center text-3xl text-gray-500 my-4">
-                {index === 2 || index === 6 ? (
-                  <div className="flex justify-center items-center my-5">
-                    <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-purple-600 relative overflow-hidden rounded">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent animate-pulse"></div>
-                    </div>
+        <Tabs defaultValue="main-processes" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 mb-6">
+            <TabsTrigger value="main-processes">Procesos Principales</TabsTrigger>
+            <TabsTrigger value="excluded-processes">Procesos Excluidos</TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="main-processes">
+            <GeneralDiagram />
+            
+            {phases.map((phase, index) => (
+              <React.Fragment key={phase.id}>
+                <ProcessPhase 
+                  phase={phase}
+                  phaseNumber={index + 1}
+                  onReorderProcesses={handleReorderProcesses}
+                />
+                {index < phases.length - 1 && (
+                  <div className="text-center text-3xl text-gray-500 my-4">
+                    {index === 2 || index === 6 ? (
+                      <div className="flex justify-center items-center my-5">
+                        <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-purple-600 relative overflow-hidden rounded">
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent animate-pulse"></div>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="animate-bounce">⬇️</div>
+                    )}
                   </div>
-                ) : (
-                  <div className="animate-bounce">⬇️</div>
                 )}
-              </div>
-            )}
-          </React.Fragment>
-        ))}
-        
-        <Legend />
+              </React.Fragment>
+            ))}
+            
+            <Legend />
+          </TabsContent>
+          
+          <TabsContent value="excluded-processes">
+            <ExcludedProcesses />
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
