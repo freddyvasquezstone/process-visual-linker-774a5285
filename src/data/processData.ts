@@ -159,6 +159,7 @@ export const processData: Phase[] = [
       {
         id: 'comercio-exterior',
         name: 'COMERCIO EXTERIOR',
+        pdfLink: 'https://drive.google.com/file/d/1zPW9FPJec5IxU67lNBTNGcNtbNDiQUtX/view?usp=drive_link',
         figmaLink: 'https://docs.google.com/document/d/1ZV-qQllj6y0gSzdqqU-XLZD78l6rmTSy/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true'
       },
       {
