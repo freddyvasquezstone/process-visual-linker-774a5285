@@ -153,7 +153,9 @@ export const processData: Phase[] = [
       // Tercera fila - 4 elementos
       {
         id: 'reexpediciones',
-        name: 'REEXPEDICIONES'
+        name: 'REEXPEDICIONES',
+        pdfLink: 'https://drive.google.com/file/d/1RuSUDwQO9_AFC9c0Bjx_ceL4ZHUxRPLp/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/2PvvDR3GIsmpDbqJ8LnkeQ/Reexpedici%C3%B3n-de-Manifiestos?node-id=0-1&p=f&t=sbPa2ET0OpTbNfIr-0'
       },
       {
         id: 'operacion-internacional',
