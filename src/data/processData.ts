@@ -170,6 +170,8 @@ export const processData: Phase[] = [
       {
         id: 'tracking-operativo',
         name: 'TRAKING OPERATIVO',
+        pdfLink: 'https://drive.google.com/file/d/19yP_G5wfFqOul4W0r7sKWpXvwqKB7_36/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/tOFkC2Jr5u1fPkzm0PgqI3/Traking-Operativo?node-id=0-1&p=f&t=oPSW6CNuEsvoj1RL-0'
       }
     ]
   },
