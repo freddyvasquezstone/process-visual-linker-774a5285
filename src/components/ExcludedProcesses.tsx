@@ -26,7 +26,9 @@ const ExcludedProcesses = () => {
     },
     {
       id: 'servicio-cliente-excluded',
-      name: 'SERVICIO AL CLIENTE'
+      name: 'SERVICIO AL CLIENTE',
+      pdfLink: 'https://drive.google.com/file/d/1sVKOouS3HANO4UgUE20LmdtoFMIKjDtt/view?usp=drive_link',
+      figmaLink: 'https://www.figma.com/board/GtrZkRloRE7zcqm1jPN2mY/Servicio-Al-cliente-HUMADEA?node-id=0-1&p=f&t=HEICLz4ekWxwa70E-0'
     },
     {
         id: 'novedades-cupo',
