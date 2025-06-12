@@ -118,7 +118,10 @@ export const processData: Phase[] = [
       // Segunda fila - 4 elementos
       {
         id: 'logistica-contenedores',
-        name: 'LOGÍSTICA CONTENEDORES'
+        name: 'LOGÍSTICA CONTENEDORES',
+        pdfLink: 'https://drive.google.com/file/d/18TMuHXG1lvkkrHYoyyuUvudWl2Ro3Wwj/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/UOqIwXpPPyB2rvRtwoEnMF/Log%C3%ADstica-Contenedores-HUMADEA?node-id=0-1&p=f&t=o7tYoLnXAhK6FCkH-0'
+
       },
       {
         id: 'control-precintos',
