@@ -293,11 +293,15 @@ export const processData: Phase[] = [
       },
       {
         id: 'turnpike',
-        name: 'TURNPIKE'
+        name: 'TURNPIKE',
+        pdfLink: 'https://drive.google.com/file/d/1pnVHdvK5NBPFY7y8E8UWWYltaYy2lNrb/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/tpVNyPGWDvJ6icqbv1PvF4/Turnpike-Humadea?node-id=0-1&p=f&t=nYhiyMbmxGPM32yA-0'
       },
       {
         id: 'estructura-app',
-        name: 'ESTRUCTURA APP'
+        name: 'ESTRUCTURA APP',
+        pdfLink: '',
+        figmaLink: 'https://www.figma.com/board/qLHim6TIvac6glqikYUWkC/Estructuraci%C3%B3n-APP-HUMADEA?node-id=0-1&p=f&t=RGTmKkea9OOvD07X-0'
       }
     ]
   },
