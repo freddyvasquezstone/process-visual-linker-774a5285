@@ -25,12 +25,6 @@ const ExcludedProcesses = () => {
       figmaLink: 'https://www.figma.com/board/wlQ0QLIByXhLmYmhjOyzIw/Tracking-Seguridad---Trafico?node-id=0-1&p=f&t=jiaXEAdMx1Px0mzy-0'
     },
     {
-      id: 'servicio-cliente-excluded',
-      name: 'SERVICIO AL CLIENTE',
-      pdfLink: 'https://drive.google.com/file/d/1sVKOouS3HANO4UgUE20LmdtoFMIKjDtt/view?usp=drive_link',
-      figmaLink: 'https://www.figma.com/board/GtrZkRloRE7zcqm1jPN2mY/Servicio-Al-cliente-HUMADEA?node-id=0-1&p=f&t=HEICLz4ekWxwa70E-0'
-    },
-    {
         id: 'novedades-cupo',
         name: 'NOVEDADES CUPO DE CLIENTES',
         pdfLink:'https://drive.google.com/file/d/1N-d71Hu3z428oE1bLJimWiiIQmZUeOmh/view?usp=drive_link',
