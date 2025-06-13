@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import ProcessBox from './ProcessBox';
 import { Phase, DragData } from '../types/process';
@@ -70,6 +69,8 @@ const ProcessPhase: React.FC<ProcessPhaseProps> = ({ phase, phaseNumber, onReord
   const organizeProcessesInRows = () => {
     const processes = phase.processes;
     
+    console.log(`Organizando procesos para fase ${phase.id}:`, processes.map(p => p.name));
+    
     switch (phase.id) {
       case 'comercial':
         return [
@@ -81,12 +82,14 @@ const ProcessPhase: React.FC<ProcessPhaseProps> = ({ phase, phaseNumber, onReord
         ];
       
       case 'operativa':
-        return [
+        const operativaRows = [
           processes.slice(0, 4),   // Fila 1: 4 elementos
-          processes.slice(4, 10),  // Fila 2: 6 elementos (ahora incluye ORDEN DE RETIRO)
+          processes.slice(4, 10),  // Fila 2: 6 elementos (incluye ORDEN DE RETIRO)
           processes.slice(10, 14), // Fila 3: 4 elementos
           processes.slice(14, 16)  // Fila 4: 2 elementos
         ];
+        console.log('Filas operativa:', operativaRows.map(row => row.map(p => p.name)));
+        return operativaRows;
       
       case 'trafico-seguridad':
         return [
@@ -148,6 +151,7 @@ const ProcessPhase: React.FC<ProcessPhaseProps> = ({ phase, phaseNumber, onReord
       >
         {rowProcesses.map((process, processIndex) => {
           const globalIndex = processRows.slice(0, rowIndex).flat().length + processIndex;
+          console.log(`Renderizando proceso: ${process.name} en fila ${rowIndex}, índice ${processIndex}`);
           return (
             <div
               key={process.id}
