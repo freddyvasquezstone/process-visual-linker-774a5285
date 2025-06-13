@@ -42,7 +42,7 @@ export const processData: Phase[] = [
       // Tercera fila - 3 elementos
       {
         id: 'creacion-op',
-        name: 'CREACIÓN ORDEN DE PRODUCCIÓN CARGA GRAL',
+        name: 'CREACIÓN ORDEN DE PRODUCCIÓN CARGA GENERAL',
         pdfLink: 'https://drive.google.com/file/d/1BeY7ScJyU1yigd6SIrdtKCVBCJyWsG7e/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/uLKom2kYlZ7X4duAeOUf6y/Creaci%C3%B3n-Orden-de-Producci%C3%B3n-HUMADEA?node-id=0-1&t=gpnhuL9ZwkxTa8EP-1'
       },
