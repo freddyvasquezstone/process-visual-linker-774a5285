@@ -134,7 +134,7 @@ export const processData: Phase[] = [
       },
       {
         id: 'orden-cargue',
-        name: 'ORDEN DE CARGUE Y RETIRO',
+        name: 'ORDEN DE CARGUE',
         pdfLink: 'https://drive.google.com/file/d/1q9YJ3zoEAWuMhY6hcKZs574xY74hGLVs/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/LpryNSsTSvMSGNxHeSuNYD/Flow-chart--Community-?node-id=0-1&p=f&t=t92OpLAuDJYUje2S-0'
       },
@@ -173,18 +173,29 @@ export const processData: Phase[] = [
       {
         id: 'creacion-do',
         name: 'CREACIÓN D.O',
+        pdfLink: 'https://drive.google.com/file/d/1GdBQluqDkYN3a9Y3ONECmmbf8WeFjnUI/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/uMmXFv6auprW0ibxTt6VVD/Documento-DO-HUMADEA?t=po9j0GyVhKEBibHT-0'
       },
       // Cuarta fila - 2 elementos
       {
         id: 'aprobacion-do',
         name: 'APROBACIÓN D.O',
+        pdfLink: 'https://drive.google.com/file/d/1oV3akVytaF98_Sq3hgq3hhXOU6niWsEq/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/6nZdF1pHRd7J5hHMm8CUTb/Aprobaci%C3%B3n-Documento-DO?node-id=0-1&p=f&t=bA1JHKJ0BxLeKRIF-0'
       },
       {
         id: 'tracking-operativo',
         name: 'TRAKING OPERATIVO',
         pdfLink: 'https://drive.google.com/file/d/19yP_G5wfFqOul4W0r7sKWpXvwqKB7_36/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/tOFkC2Jr5u1fPkzm0PgqI3/Traking-Operativo?node-id=0-1&p=f&t=oPSW6CNuEsvoj1RL-0'
-      }
+      },
+      {
+        id: 'orden-cargue',
+        name: 'ORDEN DE RETIRO',
+        pdfLink: 'https://drive.google.com/file/d/1q9YJ3zoEAWuMhY6hcKZs574xY74hGLVs/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/DN8xLmqoSZUlw6fujz0zFy/Orden-de-Retiro-Humadea?node-id=0-1&p=f&t=WkiUpS63jl4ahGkw-0'
+      },
+      
     ]
   },
   {
@@ -265,10 +276,10 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1dpQE5zrsin8ahjzEFDJQoLT7Gd1n9Ee8/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/SY4Nm8QW4zSpVIC8CaSj1p/Novedades-de-Liquidaci%C3%B3n-y-Cumplidos-HUMADEA?node-id=0-1&p=f&t=RvjDniWYrWYMl10e-0'
       },
-      {
-        id: 'facturacion',
-        name: 'FACTURACIÓN',
-      },
+      //{
+      //  id: 'facturacion',
+      //  name: 'FACTURACIÓN',
+      //},
       {
         id: 'cartera-transportador',
         name: 'CARTERA TRANSPORTADOR',
