@@ -83,9 +83,9 @@ const ProcessPhase: React.FC<ProcessPhaseProps> = ({ phase, phaseNumber, onReord
       case 'operativa':
         return [
           processes.slice(0, 4),   // Fila 1: 4 elementos
-          processes.slice(4, 9),   // Fila 2: 5 elementos
-          processes.slice(9, 13),  // Fila 3: 4 elementos
-          processes.slice(13, 15)  // Fila 4: 2 elementos
+          processes.slice(4, 10),  // Fila 2: 6 elementos (ahora incluye ORDEN DE RETIRO)
+          processes.slice(10, 14), // Fila 3: 4 elementos
+          processes.slice(14, 16)  // Fila 4: 2 elementos
         ];
       
       case 'trafico-seguridad':
@@ -133,6 +133,7 @@ const ProcessPhase: React.FC<ProcessPhaseProps> = ({ phase, phaseNumber, onReord
         case 3: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3';
         case 4: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4';
         case 5: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5';
+        case 6: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6';
         default: return 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
       }
     };
