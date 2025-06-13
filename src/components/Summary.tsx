@@ -17,7 +17,9 @@ const Summary = () => {
       'servicio-cliente',
       'novedades-cupo',
       'novedades-op',
-      'novedades-liquidacion'
+      'novedades-liquidacion',
+      'riesgos-seguros',
+      'siniestros'
     ];
 
     processData.forEach(phase => {
@@ -66,7 +68,9 @@ const Summary = () => {
       'servicio-cliente',
       'novedades-cupo',
       'novedades-op',
-      'novedades-liquidacion'
+      'novedades-liquidacion',
+      'riesgos-seguros',
+      'siniestros'
     ];
 
     processData.forEach(phase => {

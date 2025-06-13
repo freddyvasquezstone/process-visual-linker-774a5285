@@ -49,11 +49,15 @@ const ExcludedProcesses = () => {
         figmaLink: 'https://www.figma.com/board/SY4Nm8QW4zSpVIC8CaSj1p/Novedades-de-Liquidaci%C3%B3n-y-Cumplidos-HUMADEA?node-id=0-1&p=f&t=RvjDniWYrWYMl10e-0'
       },
     {
-        id: 'operacion-internacional',
-        name: 'OPERACIÓN INTERNACIONAL',
-        pdfLink: 'https://drive.google.com/file/d/1vealvWO9SOOIHCdt9qJWyYAHieYuo6dc/view?usp=drive_link', 
-        figmaLink: 'https://www.figma.com/board/qiGlYwHKuJPRhhZXTfdaNE/Operacion-Internacional-HUMADEA?node-id=0-1&p=f&t=fkwyPiIgBjRNmFbA-0'
+        id: 'riesgos-seguros',
+        name: 'RIESGOS Y SEGUROS',
+        pdfLink: 'https://drive.google.com/file/d/1Lyd5bVxzz6HqbcPaV7gdSHL5PMO07h7C/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/yeUQMGsMYRK4HzkaYusITP/Seguros-Humadea?node-id=0-1&p=f&t=Fx8vFMfx4ySmmSKN-0'
       },
+    {
+        id: 'siniestros',
+        name: 'SINIESTROS'
+      }
   ];
 
   return (
