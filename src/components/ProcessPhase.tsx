@@ -84,7 +84,6 @@ const ProcessPhase: React.FC<ProcessPhaseProps> = ({ phase, phaseNumber, onReord
         return [
           processes.slice(0, 4),   // Fila 1: 4 elementos
           processes.slice(4, 9),   // Fila 2: 5 elementos
-          processes.slice(4, 5),   // Fila 2: 1 elemento
           processes.slice(9, 13),  // Fila 3: 4 elementos
           processes.slice(13, 15)  // Fila 4: 2 elementos
         ];
