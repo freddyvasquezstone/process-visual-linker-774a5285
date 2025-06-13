@@ -50,7 +50,9 @@ const ExcludedProcesses = () => {
       },
     {
         id: 'siniestros',
-        name: 'SINIESTROS'
+        name: 'SINIESTROS',
+        pdfLink: 'https://drive.google.com/file/d/1BveLteIHxoJhiUNVp8gK847yJkQFPcB_/view?usp=drive_link',
+        figmaLink:'https://www.figma.com/board/7fYrPn1eY54FZdUISWH8oA/Siniestros-HUMADEA?t=AUH7kEKBSItw6lRB-0'
       }
   ];
 
