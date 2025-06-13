@@ -292,7 +292,7 @@ export const processData: Phase[] = [
       {
         id: 'rodamientos',
         name: 'RODAMIENTOS',
-        pdfLink:'',
+        pdfLink:'https://drive.google.com/file/d/1fA_wSubTNdfP1xX1YMNLTr4myby8CDqs/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/1shxbvHjbE9QhynH0w0Fu7/Rodamientos-Humadea?node-id=0-1&p=f&t=f6I3tXXOgSMOx3eK-0'
       },
       {
