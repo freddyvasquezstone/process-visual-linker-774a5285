@@ -48,6 +48,12 @@ const ExcludedProcesses = () => {
         pdfLink: 'https://drive.google.com/file/d/1dpQE5zrsin8ahjzEFDJQoLT7Gd1n9Ee8/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/SY4Nm8QW4zSpVIC8CaSj1p/Novedades-de-Liquidaci%C3%B3n-y-Cumplidos-HUMADEA?node-id=0-1&p=f&t=RvjDniWYrWYMl10e-0'
       },
+    {
+        id: 'operacion-internacional',
+        name: 'OPERACIÓN INTERNACIONAL',
+        pdfLink: 'https://drive.google.com/file/d/1vealvWO9SOOIHCdt9qJWyYAHieYuo6dc/view?usp=drive_link', 
+        figmaLink: 'https://www.figma.com/board/qiGlYwHKuJPRhhZXTfdaNE/Operacion-Internacional-HUMADEA?node-id=0-1&p=f&t=fkwyPiIgBjRNmFbA-0'
+      },
   ];
 
   return (
