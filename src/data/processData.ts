@@ -139,6 +139,12 @@ export const processData: Phase[] = [
         figmaLink: 'https://www.figma.com/board/LpryNSsTSvMSGNxHeSuNYD/Flow-chart--Community-?node-id=0-1&p=f&t=t92OpLAuDJYUje2S-0'
       },
       {
+        id: 'orden-retiro',
+        name: 'ORDEN DE RETIRO',
+        pdfLink: '',
+        figmaLink: ''
+      },
+      {
         id: 'remesa',
         name: 'REMESA',
         pdfLink: 'https://drive.google.com/file/d/1lUDhDf9SE1lZGAB-bMUUNkzoD5q2siv-/view?usp=drive_link',
