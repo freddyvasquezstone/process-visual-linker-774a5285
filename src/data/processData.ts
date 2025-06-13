@@ -164,6 +164,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1vealvWO9SOOIHCdt9qJWyYAHieYuo6dc/view?usp=drive_link', 
         figmaLink: 'https://www.figma.com/board/qiGlYwHKuJPRhhZXTfdaNE/Operacion-Internacional-HUMADEA?node-id=0-1&p=f&t=fkwyPiIgBjRNmFbA-0'
       },
+      
       {
         id: 'comercio-exterior',
         name: 'COMERCIO EXTERIOR',
