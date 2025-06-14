@@ -317,7 +317,7 @@ export const processData: Phase[] = [
       {
         id: 'estructura-app',
         name: 'ESTRUCTURA APP',
-        pdfLink: '',
+        pdfLink: 'https://drive.google.com/file/d/1mPe5amfvhF1OOo9Z0qR4DHaRb8QD03_f/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/qLHim6TIvac6glqikYUWkC/Estructuraci%C3%B3n-APP-HUMADEA?node-id=0-1&p=f&t=RGTmKkea9OOvD07X-0'
       }
     ]
