@@ -142,7 +142,7 @@ export const processData: Phase[] = [
         id: 'orden-retiro',
         name: 'ORDEN DE RETIRO',
         //pdfLink: '',
-        //figmaLink: 'https://www.figma.com/board/DN8xLmqoSZUlw6fujz0zFy/Orden-de-Retiro-Humadea?node-id=0-1&p=f&t=WkiUpS63jl4ahGkw-0'
+        figmaLink: 'https://www.figma.com/board/DN8xLmqoSZUlw6fujz0zFy/Orden-de-Retiro-Humadea?node-id=0-1&p=f&t=5ntyJd0EFwPV6ZFi-0'
       },
       {
         id: 'remesa',
