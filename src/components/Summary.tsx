@@ -145,7 +145,7 @@ const Summary = () => {
         📊 Resumen del Estado de Procesos - Análisis de Información y Estructuración STONE para Proyecto HUMADEA
       </h2>
       
-      {/* RESUMEN PRINCIPAL EN LA PARTE SUPERIOR */}
+      {/* RESUMEN GENERAL DEL ESTADO - DESTACADO */}
       <div className="mb-8 bg-white p-6 rounded-xl shadow-md border-2 border-blue-200">
         <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           🎯 Resumen General del Estado
@@ -199,9 +199,9 @@ const Summary = () => {
         </div>
       </div>
 
-      {/* DESGLOSE DETALLADO POR CATEGORÍAS */}
+      {/* SEPARADOR Y TÍTULO PARA DESGLOSE DETALLADO */}
       <div className="border-t-2 border-gray-300 pt-6">
-        <h3 className="text-xl font-bold text-gray-700 mb-4 text-center">
+        <h3 className="text-xl font-bold text-gray-700 mb-6 text-center">
           📋 Desglose Detallado por Categorías
         </h3>
         
