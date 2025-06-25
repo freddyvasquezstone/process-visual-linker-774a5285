@@ -117,7 +117,7 @@ const ProcessFlowDiagram = () => {
           </TabsContent>
         </Tabs>
 
-        <Summary />
+        
       </div>
     </div>
   );
