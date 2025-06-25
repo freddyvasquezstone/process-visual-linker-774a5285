@@ -75,7 +75,7 @@ const ProcessFlowDiagram = () => {
                           
         </h1>
         
-        
+        <Summary />
         
         <Tabs defaultValue="main-processes" className="w-full">
           <TabsList className="grid w-full grid-cols-2 mb-6">
