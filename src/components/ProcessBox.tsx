@@ -17,8 +17,8 @@ interface ProcessBoxProps {
 }
 
 const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
-  const hasAllLinks = process.pdfLink && process.figmaLink;
-  const hasNoLinks = !process.pdfLink && !process.figmaLink;
+  const hasAllLinks = process.pdfLink && process.figmaLink && process.documentoRefinadoLink && process.documentoObservacionesLink;
+  const hasNoLinks = !process.pdfLink && !process.figmaLink && !process.documentoRefinadoLink && !process.documentoObservacionesLink;
   
   const borderColor = hasAllLinks ? 'border-l-green-500' : hasNoLinks ? 'border-l-yellow-500' : 'border-l-orange-500';
   const hoverBorderColor = hasAllLinks ? 'hover:border-l-green-600' : hasNoLinks ? 'hover:border-l-yellow-600' : 'hover:border-l-orange-600';
@@ -106,10 +106,10 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
             
             <div className="mt-2 flex items-center justify-between">
               <div className="flex gap-1">
-                <div className={`w-2 h-2 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
-                <div className={`w-2 h-2 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
-                <div className={`w-2 h-2 rounded-full ${process.documentoRefinadoLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
-                <div className={`w-2 h-2 rounded-full ${process.documentoObservacionesLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+                <div className={`w-3 h-3 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`} title="Documentación PDF"></div>
+                <div className={`w-3 h-3 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`} title="Figma"></div>
+                <div className={`w-3 h-3 rounded-full ${process.documentoRefinadoLink ? 'bg-green-500' : 'bg-gray-300'}`} title="Documento Refinado"></div>
+                <div className={`w-3 h-3 rounded-full ${process.documentoObservacionesLink ? 'bg-green-500' : 'bg-gray-300'}`} title="Documento Observaciones"></div>
               </div>
               <div className="flex flex-col items-end gap-1">
                 <div className={`text-xs font-medium ${hasAllLinks ? 'text-green-600' : hasNoLinks ? 'text-yellow-600' : 'text-orange-600'}`}>
@@ -121,7 +121,7 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
           </div>
         </DropdownMenuTrigger>
         
-        <DropdownMenuContent className="w-56 bg-white border shadow-lg">
+        <DropdownMenuContent className="w-56 bg-white border shadow-lg z-50">
           {process.pdfLink && (
             <DropdownMenuItem 
               onClick={handlePdfClick}
@@ -140,6 +140,10 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
               <Figma className="h-4 w-4 text-purple-500" />
               <span>Figma</span>
             </DropdownMenuItem>
+          )}
+
+          {(process.pdfLink || process.figmaLink) && (process.documentoRefinadoLink || process.documentoObservacionesLink) && (
+            <DropdownMenuSeparator />
           )}
 
           {process.documentoRefinadoLink && (

@@ -13,27 +13,9 @@ const ResponsibleBreakdown = () => {
     let validacionStone = 0;
     let refinadoStone = 0;
 
-    const excludedProcessIds = [
-      'enturnamiento',
-      'seguridad-trafico',
-      'tracking-seguridad',
-      'novedades-cupo',
-      'novedades-op',
-      'novedades-liquidacion',
-      'riesgos-seguros',
-      'siniestros'
-    ];
-
+    // Incluir TODOS los procesos, incluyendo los procesos adicionales
     processData.forEach(phase => {
-      if (phase.id === 'procesos-apoyo') {
-        return;
-      }
-      
       phase.processes.forEach((process: Process) => {
-        if (excludedProcessIds.includes(process.id)) {
-          return;
-        }
-
         switch (process.responsableStatus) {
           case 'validacion-humadea':
             validacionHumadea++;
@@ -62,27 +44,10 @@ const ResponsibleBreakdown = () => {
 
   const getProcessesByStatus = (status: string) => {
     const processes: { name: string; phase: string }[] = [];
-    const excludedProcessIds = [
-      'enturnamiento',
-      'seguridad-trafico',
-      'tracking-seguridad',
-      'novedades-cupo',
-      'novedades-op',
-      'novedades-liquidacion',
-      'riesgos-seguros',
-      'siniestros'
-    ];
 
+    // Incluir TODOS los procesos, incluyendo los procesos adicionales
     processData.forEach(phase => {
-      if (phase.id === 'procesos-apoyo') {
-        return;
-      }
-      
       phase.processes.forEach((process: Process) => {
-        if (excludedProcessIds.includes(process.id)) {
-          return;
-        }
-
         const processStatus = process.responsableStatus || 'validacion-humadea';
         if (processStatus === status) {
           processes.push({
@@ -138,6 +103,12 @@ const ResponsibleBreakdown = () => {
               <div className="text-2xl font-bold text-green-700">{summary.refinadoStone}</div>
               <div className="text-sm font-medium text-green-600">Refinado Stone</div>
               <div className="text-xs text-green-500 mt-1">Click para ver detalles</div>
+            </div>
+          </div>
+
+          <div className="text-center mb-4">
+            <div className="text-lg font-bold text-gray-700">
+              Total de Procesos: {summary.total}
             </div>
           </div>
 
