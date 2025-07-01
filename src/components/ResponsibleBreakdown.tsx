@@ -3,7 +3,14 @@ import React, { useState } from 'react';
 import { processData } from '../data/processData';
 import { Process } from '../types/process';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Users, Eye, CheckCircle } from 'lucide-react';
+import { Users, Eye, CheckCircle, FileText, Figma, FileCheck, MessageSquare } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+} from './ui/dropdown-menu';
 
 const ResponsibleBreakdown = () => {
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
@@ -13,30 +20,9 @@ const ResponsibleBreakdown = () => {
     let validacionStone = 0;
     let refinadoStone = 0;
 
-    // IDs de los procesos que deben excluirse del conteo (mismos que en Summary.tsx)
-    const excludedProcessIds = [
-      'enturnamiento',
-      'seguridad-trafico',
-      'tracking-seguridad',
-      'novedades-cupo',
-      'novedades-op',
-      'novedades-liquidacion',
-      'riesgos-seguros',
-      'siniestros'
-    ];
-
+    // Incluir TODOS los procesos, incluyendo los adicionales
     processData.forEach(phase => {
-      // Excluir las áreas de apoyo del cálculo del resumen (igual que en Summary.tsx)
-      if (phase.id === 'procesos-apoyo') {
-        return;
-      }
-      
       phase.processes.forEach((process: Process) => {
-        // Excluir los procesos específicos que van en la pestaña adicional
-        if (excludedProcessIds.includes(process.id)) {
-          return;
-        }
-
         switch (process.responsableStatus) {
           case 'validacion-humadea':
             validacionHumadea++;
@@ -64,43 +50,47 @@ const ResponsibleBreakdown = () => {
   };
 
   const getProcessesByStatus = (status: string) => {
-    const processes: { name: string; phase: string }[] = [];
+    const processes: { name: string; phase: string; process: Process }[] = [];
 
-    // IDs de los procesos que deben excluirse del conteo (mismos que en Summary.tsx)
-    const excludedProcessIds = [
-      'enturnamiento',
-      'seguridad-trafico',
-      'tracking-seguridad',
-      'novedades-cupo',
-      'novedades-op',
-      'novedades-liquidacion',
-      'riesgos-seguros',
-      'siniestros'
-    ];
-
+    // Incluir TODOS los procesos, incluyendo los adicionales
     processData.forEach(phase => {
-      // Excluir las áreas de apoyo del cálculo del resumen (igual que en Summary.tsx)
-      if (phase.id === 'procesos-apoyo') {
-        return;
-      }
-      
       phase.processes.forEach((process: Process) => {
-        // Excluir los procesos específicos que van en la pestaña adicional
-        if (excludedProcessIds.includes(process.id)) {
-          return;
-        }
-
         const processStatus = process.responsableStatus || 'validacion-humadea';
         if (processStatus === status) {
           processes.push({
             name: process.name,
-            phase: phase.title
+            phase: phase.title,
+            process: process
           });
         }
       });
     });
 
     return processes;
+  };
+
+  const handlePdfClick = (process: Process) => {
+    if (process.pdfLink) {
+      window.open(process.pdfLink, '_blank');
+    }
+  };
+
+  const handleFigmaClick = (process: Process) => {
+    if (process.figmaLink) {
+      window.open(process.figmaLink, '_blank');
+    }
+  };
+
+  const handleDocumentoRefinadoClick = (process: Process) => {
+    if (process.documentoRefinadoLink) {
+      window.open(process.documentoRefinadoLink, '_blank');
+    }
+  };
+
+  const handleDocumentoObservacionesClick = (process: Process) => {
+    if (process.documentoObservacionesLink) {
+      window.open(process.documentoObservacionesLink, '_blank');
+    }
   };
 
   const summary = calculateResponsibleSummary();
@@ -162,11 +152,73 @@ const ResponsibleBreakdown = () => {
                              activeFilter === 'validacion-stone' ? 'Validación Stone' : 'Refinado Stone'}
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                {getProcessesByStatus(activeFilter).map((process, index) => (
-                  <div key={index} className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300">
-                    <div className="font-medium text-sm text-gray-800">{process.name}</div>
-                    <div className="text-xs text-gray-500 mt-1">{process.phase}</div>
-                  </div>
+                {getProcessesByStatus(activeFilter).map((item, index) => (
+                  <DropdownMenu key={index}>
+                    <DropdownMenuTrigger asChild>
+                      <div className="bg-gray-50 p-3 rounded-lg border-l-4 border-gray-300 cursor-pointer hover:bg-gray-100 transition-colors">
+                        <div className="font-medium text-sm text-gray-800">{item.name}</div>
+                        <div className="text-xs text-gray-500 mt-1">{item.phase}</div>
+                        <div className="mt-2 flex gap-1">
+                          <div 
+                            className={`w-2 h-2 rounded-full ${item.process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`} 
+                            title="Documentación PDF"
+                          ></div>
+                          <div 
+                            className={`w-2 h-2 rounded-full ${item.process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`} 
+                            title="Figma"
+                          ></div>
+                          <div 
+                            className={`w-2 h-2 rounded-full ${item.process.documentoRefinadoLink ? 'bg-green-500' : 'bg-gray-300'}`} 
+                            title="Documento Refinado"
+                          ></div>
+                          <div 
+                            className={`w-2 h-2 rounded-full ${item.process.documentoObservacionesLink ? 'bg-green-500' : 'bg-gray-300'}`} 
+                            title="Documento Observaciones"
+                          ></div>
+                        </div>
+                      </div>
+                    </DropdownMenuTrigger>
+                    
+                    <DropdownMenuContent className="w-56 bg-white border shadow-lg z-50">
+                      <DropdownMenuItem 
+                        onClick={() => handlePdfClick(item.process)}
+                        className={`flex items-center gap-2 cursor-pointer hover:bg-red-50 ${!item.process.pdfLink ? 'opacity-50' : ''}`}
+                      >
+                        <FileText className="h-4 w-4 text-red-500" />
+                        <span>Documentación</span>
+                        {!item.process.pdfLink && <span className="text-xs text-gray-400 ml-auto">(Sin enlace)</span>}
+                      </DropdownMenuItem>
+                      
+                      <DropdownMenuItem 
+                        onClick={() => handleFigmaClick(item.process)}
+                        className={`flex items-center gap-2 cursor-pointer hover:bg-purple-50 ${!item.process.figmaLink ? 'opacity-50' : ''}`}
+                      >
+                        <Figma className="h-4 w-4 text-purple-500" />
+                        <span>Figma</span>
+                        {!item.process.figmaLink && <span className="text-xs text-gray-400 ml-auto">(Sin enlace)</span>}
+                      </DropdownMenuItem>
+
+                      <DropdownMenuSeparator />
+
+                      <DropdownMenuItem 
+                        onClick={() => handleDocumentoRefinadoClick(item.process)}
+                        className={`flex items-center gap-2 cursor-pointer hover:bg-green-50 ${!item.process.documentoRefinadoLink ? 'opacity-50' : ''}`}
+                      >
+                        <FileCheck className="h-4 w-4 text-green-500" />
+                        <span>Documento Refinado</span>
+                        {!item.process.documentoRefinadoLink && <span className="text-xs text-gray-400 ml-auto">(Sin enlace)</span>}
+                      </DropdownMenuItem>
+
+                      <DropdownMenuItem 
+                        onClick={() => handleDocumentoObservacionesClick(item.process)}
+                        className={`flex items-center gap-2 cursor-pointer hover:bg-orange-50 ${!item.process.documentoObservacionesLink ? 'opacity-50' : ''}`}
+                      >
+                        <MessageSquare className="h-4 w-4 text-orange-500" />
+                        <span>Documento Observaciones</span>
+                        {!item.process.documentoObservacionesLink && <span className="text-xs text-gray-400 ml-auto">(Sin enlace)</span>}
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
                 ))}
               </div>
               {getProcessesByStatus(activeFilter).length === 0 && (
