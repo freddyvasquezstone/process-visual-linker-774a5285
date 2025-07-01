@@ -134,55 +134,43 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
         </DropdownMenuTrigger>
         
         <DropdownMenuContent className="w-56 bg-white border shadow-lg z-50">
-          {process.pdfLink && (
-            <DropdownMenuItem 
-              onClick={handlePdfClick}
-              className="flex items-center gap-2 cursor-pointer hover:bg-red-50"
-            >
-              <FileText className="h-4 w-4 text-red-500" />
-              <span>Documentación</span>
-            </DropdownMenuItem>
-          )}
+          <DropdownMenuItem 
+            onClick={handlePdfClick}
+            className={`flex items-center gap-2 cursor-pointer hover:bg-red-50 ${!process.pdfLink ? 'opacity-50' : ''}`}
+          >
+            <FileText className="h-4 w-4 text-red-500" />
+            <span>Documentación</span>
+            {!process.pdfLink && <span className="text-xs text-gray-400 ml-auto">(Sin enlace)</span>}
+          </DropdownMenuItem>
           
-          {process.figmaLink && (
-            <DropdownMenuItem 
-              onClick={handleFigmaClick}
-              className="flex items-center gap-2 cursor-pointer hover:bg-purple-50"
-            >
-              <Figma className="h-4 w-4 text-purple-500" />
-              <span>Figma</span>
-            </DropdownMenuItem>
-          )}
+          <DropdownMenuItem 
+            onClick={handleFigmaClick}
+            className={`flex items-center gap-2 cursor-pointer hover:bg-purple-50 ${!process.figmaLink ? 'opacity-50' : ''}`}
+          >
+            <Figma className="h-4 w-4 text-purple-500" />
+            <span>Figma</span>
+            {!process.figmaLink && <span className="text-xs text-gray-400 ml-auto">(Sin enlace)</span>}
+          </DropdownMenuItem>
 
-          {(process.pdfLink || process.figmaLink) && (process.documentoRefinadoLink || process.documentoObservacionesLink) && (
-            <DropdownMenuSeparator />
-          )}
+          <DropdownMenuSeparator />
 
-          {process.documentoRefinadoLink && (
-            <DropdownMenuItem 
-              onClick={handleDocumentoRefinadoClick}
-              className="flex items-center gap-2 cursor-pointer hover:bg-green-50"
-            >
-              <FileCheck className="h-4 w-4 text-green-500" />
-              <span>Documento Refinado</span>
-            </DropdownMenuItem>
-          )}
+          <DropdownMenuItem 
+            onClick={handleDocumentoRefinadoClick}
+            className={`flex items-center gap-2 cursor-pointer hover:bg-green-50 ${!process.documentoRefinadoLink ? 'opacity-50' : ''}`}
+          >
+            <FileCheck className="h-4 w-4 text-green-500" />
+            <span>Documento Refinado</span>
+            {!process.documentoRefinadoLink && <span className="text-xs text-gray-400 ml-auto">(Sin enlace)</span>}
+          </DropdownMenuItem>
 
-          {process.documentoObservacionesLink && (
-            <DropdownMenuItem 
-              onClick={handleDocumentoObservacionesClick}
-              className="flex items-center gap-2 cursor-pointer hover:bg-orange-50"
-            >
-              <MessageSquare className="h-4 w-4 text-orange-500" />
-              <span>Documento Observaciones</span>
-            </DropdownMenuItem>
-          )}
-          
-          {!process.pdfLink && !process.figmaLink && !process.documentoRefinadoLink && !process.documentoObservacionesLink && (
-            <DropdownMenuItem disabled className="text-gray-400">
-              <span>No hay enlaces disponibles</span>
-            </DropdownMenuItem>
-          )}
+          <DropdownMenuItem 
+            onClick={handleDocumentoObservacionesClick}
+            className={`flex items-center gap-2 cursor-pointer hover:bg-orange-50 ${!process.documentoObservacionesLink ? 'opacity-50' : ''}`}
+          >
+            <MessageSquare className="h-4 w-4 text-orange-500" />
+            <span>Documento Observaciones</span>
+            {!process.documentoObservacionesLink && <span className="text-xs text-gray-400 ml-auto">(Sin enlace)</span>}
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
