@@ -366,7 +366,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1A8DWOEvn2clC9HyqnIcwvn73xHmA5lzE/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/SnEm5r2rhkbvaAEViTOvWY/Cumplidos-Liquidaciones-Humadea?node-id=0-1&p=f&t=bHJughIyLoAkZC3Y-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1Pv9G54tq9KqkcpSpXmpgkOwVwh-v-QjC/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
