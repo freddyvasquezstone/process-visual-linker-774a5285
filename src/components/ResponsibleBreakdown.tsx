@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { processData } from '../data/processData';
 import { Process } from '../types/process';
@@ -20,9 +19,28 @@ const ResponsibleBreakdown = () => {
     let validacionStone = 0;
     let refinadoStone = 0;
 
-    // Incluir TODOS los procesos, incluyendo los adicionales
+    // IDs de los procesos que deben excluirse del conteo principal
+    const excludedProcessIds = [
+      'enturnamiento',
+      'seguridad-trafico',
+      'tracking-seguridad',
+      'novedades-cupo',
+      'novedades-op',
+      'novedades-liquidacion',
+      'riesgos-seguros',
+      'siniestros'
+    ];
+
     processData.forEach(phase => {
+      // Excluir las áreas de apoyo del cálculo
+      if (phase.id === 'procesos-apoyo') {
+        return;
+      }
       phase.processes.forEach((process: Process) => {
+        // Excluir los procesos específicos que van en la pestaña adicional
+        if (excludedProcessIds.includes(process.id)) {
+          return;
+        }
         switch (process.responsableStatus) {
           case 'validacion-humadea':
             validacionHumadea++;
