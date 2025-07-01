@@ -19,7 +19,7 @@ const ResponsibleBreakdown = () => {
     let validacionStone = 0;
     let refinadoStone = 0;
 
-    // IDs de los procesos que deben excluirse del conteo principal
+    // IDs de los procesos que deben excluirse del conteo principal y que son considerados adicionales
     const excludedProcessIds = [
       'enturnamiento',
       'seguridad-trafico',
@@ -31,13 +31,12 @@ const ResponsibleBreakdown = () => {
       'siniestros'
     ];
 
+    // Procesos principales (todas las fases excepto apoyo y excluyendo los IDs excluidos)
     processData.forEach(phase => {
-      // Excluir las áreas de apoyo del cálculo
       if (phase.id === 'procesos-apoyo') {
         return;
       }
       phase.processes.forEach((process: Process) => {
-        // Excluir los procesos específicos que van en la pestaña adicional
         if (excludedProcessIds.includes(process.id)) {
           return;
         }
@@ -52,9 +51,33 @@ const ResponsibleBreakdown = () => {
             refinadoStone++;
             break;
           default:
-            // Si no tiene estado asignado, lo contamos como validación humadea por defecto
             validacionHumadea++;
             break;
+        }
+      });
+    });
+
+    // Procesos adicionales (solo los IDs excluidos, en cualquier fase excepto apoyo)
+    processData.forEach(phase => {
+      if (phase.id === 'procesos-apoyo') {
+        return;
+      }
+      phase.processes.forEach((process: Process) => {
+        if (excludedProcessIds.includes(process.id)) {
+          switch (process.responsableStatus) {
+            case 'validacion-humadea':
+              validacionHumadea++;
+              break;
+            case 'validacion-stone':
+              validacionStone++;
+              break;
+            case 'refinado-stone':
+              refinadoStone++;
+              break;
+            default:
+              validacionHumadea++;
+              break;
+          }
         }
       });
     });
