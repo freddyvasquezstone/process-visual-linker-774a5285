@@ -180,16 +180,18 @@ export const processData: Phase[] = [
         name: 'REEXPEDICIONES',
         pdfLink: 'https://drive.google.com/file/d/1RuSUDwQO9_AFC9c0Bjx_ceL4ZHUxRPLp/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/2PvvDR3GIsmpDbqJ8LnkeQ/Reexpedici%C3%B3n-de-Manifiestos?node-id=0-1&p=f&t=sbPa2ET0OpTbNfIr-0',
-        responsableStatus: 'refinado-stone'
+        //documentoRefinadoLink: '',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1n8dUs7AjSk4sBU256UBVdM0KqrH6ND0S/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'operacion-internacional',
         name: 'OPERACIÓN INTERNACIONAL',
         pdfLink: 'https://drive.google.com/file/d/1vealvWO9SOOIHCdt9qJWyYAHieYuo6dc/view?usp=drive_link', 
         figmaLink: 'https://www.figma.com/board/qiGlYwHKuJPRhhZXTfdaNE/Operacion-Internacional-HUMADEA?node-id=0-1&p=f&t=fkwyPiIgBjRNmFbA-0',
-        documentoRefinadoLink: 'https://docs.google.com/document/d/1JkakljfcsmiHGPW6nrIGCnO7sHQKo_QL/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        //documentoRefinadoLink: 'https://docs.google.com/document/d/1JkakljfcsmiHGPW6nrIGCnO7sHQKo_QL/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1IJ7xPw1PEhz4cjHJ5moR8MQwdcfZc5k0/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'refinado-stone'
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'comercio-exterior',
