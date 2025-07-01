@@ -13,14 +13,14 @@ export const processData: Phase[] = [
         name: 'CREACIÓN DE CLIENTES',
         pdfLink: 'https://drive.google.com/file/d/17fhFOsycQ66PFRpenquByK2CfDsXHAIy/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/Yk7d3FBrjSF1FH5iU12L3j/Creaci%C3%B3n-de-un-Cliente-y-Activaci%C3%B3n?node-id=0-1&t=SkvrcmYqvhSetBIb-1',
-        responsableStatus: 'refinado-stone'
+        responsableStatus: 'validacion-humadea'
       },
       {
         id: 'activacion-cliente',
         name: 'ACTIVACIÓN DE CLIENTES',
         pdfLink: 'https://drive.google.com/file/d/15tbYB_GmdzattnqrojWLZbB7QFO9XvIf/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/WkcZJsvTWhuAviNFOy9npL/Activaci%C3%B3n-Clientes-HUMADEA?node-id=0-1&t=DVlbYgYEO2IXOPgE-1',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'validacion-humadea'
       },
       {
         id: 'asignacion-cupo',
@@ -180,7 +180,7 @@ export const processData: Phase[] = [
         name: 'REEXPEDICIONES',
         pdfLink: 'https://drive.google.com/file/d/1RuSUDwQO9_AFC9c0Bjx_ceL4ZHUxRPLp/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/2PvvDR3GIsmpDbqJ8LnkeQ/Reexpedici%C3%B3n-de-Manifiestos?node-id=0-1&p=f&t=sbPa2ET0OpTbNfIr-0',
-        responsableStatus: 'validacion-humadea'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'operacion-internacional',
