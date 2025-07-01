@@ -187,7 +187,7 @@ export const processData: Phase[] = [
         name: 'OPERACIÓN INTERNACIONAL',
         pdfLink: 'https://drive.google.com/file/d/1vealvWO9SOOIHCdt9qJWyYAHieYuo6dc/view?usp=drive_link', 
         figmaLink: 'https://www.figma.com/board/qiGlYwHKuJPRhhZXTfdaNE/Operacion-Internacional-HUMADEA?node-id=0-1&p=f&t=fkwyPiIgBjRNmFbA-0',
-        responsableStatus: 'validacion-humadea'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'comercio-exterior',
@@ -281,21 +281,21 @@ export const processData: Phase[] = [
         name: 'CREACIÓN DE ANTICIPO',
         pdfLink: 'https://drive.google.com/file/d/14uaO8hwq-G2zL9CDwpTbBeHe80i8LgmH/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/G83RG6vhEzqrufPLrs4Mz4/Creacion-de-Anticipos-Humadea?t=vxOhhHpCZp1JY7om-0',
-        responsableStatus: 'validacion-humadea'
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'giros-anticipos',
         name: 'GIROS ANTICIPOS',
         pdfLink: 'https://drive.google.com/file/d/14uaO8hwq-G2zL9CDwpTbBeHe80i8LgmH/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/G83RG6vhEzqrufPLrs4Mz4/Creacion-de-Anticipos-Humadea?t=vxOhhHpCZp1JY7om-0',
-        responsableStatus: 'validacion-humadea'
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'cumplidos',
         name: 'CUMPLIDOS Y LIQUIDACIONES',
         pdfLink: 'https://drive.google.com/file/d/1A8DWOEvn2clC9HyqnIcwvn73xHmA5lzE/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/SnEm5r2rhkbvaAEViTOvWY/Cumplidos-Liquidaciones-Humadea?node-id=0-1&p=f&t=bHJughIyLoAkZC3Y-0',
-        responsableStatus: 'validacion-humadea'
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'novedades-liquidacion',
