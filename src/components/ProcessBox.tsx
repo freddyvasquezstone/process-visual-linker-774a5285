@@ -6,8 +6,9 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from './ui/dropdown-menu';
-import { ExternalLink, FileText, Figma, GripVertical } from 'lucide-react';
+import { ExternalLink, FileText, Figma, GripVertical, FileCheck, MessageSquare } from 'lucide-react';
 
 interface ProcessBoxProps {
   process: Process;
@@ -34,6 +35,18 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
     }
   };
 
+  const handleDocumentoRefinadoClick = () => {
+    if (process.documentoRefinadoLink) {
+      window.open(process.documentoRefinadoLink, '_blank');
+    }
+  };
+
+  const handleDocumentoObservacionesClick = () => {
+    if (process.documentoObservacionesLink) {
+      window.open(process.documentoObservacionesLink, '_blank');
+    }
+  };
+
   const handleDragStart = (e: React.DragEvent) => {
     const dragData: DragData = {
       processId: process.id,
@@ -51,6 +64,23 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
 
   const handleDragEnd = (e: React.DragEvent) => {
     (e.target as HTMLElement).style.opacity = '1';
+  };
+
+  const getResponsableStatusBadge = () => {
+    if (!process.responsableStatus) return null;
+    
+    const statusConfig = {
+      'validacion-humadea': { text: 'Val. Humadea', color: 'bg-blue-100 text-blue-800' },
+      'validacion-stone': { text: 'Val. Stone', color: 'bg-purple-100 text-purple-800' },
+      'refinado-stone': { text: 'Ref. Stone', color: 'bg-green-100 text-green-800' }
+    };
+    
+    const config = statusConfig[process.responsableStatus];
+    return (
+      <span className={`text-xs px-2 py-1 rounded-full ${config.color}`}>
+        {config.text}
+      </span>
+    );
   };
 
   return (
@@ -78,15 +108,20 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
               <div className="flex gap-1">
                 <div className={`w-2 h-2 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
                 <div className={`w-2 h-2 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+                <div className={`w-2 h-2 rounded-full ${process.documentoRefinadoLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+                <div className={`w-2 h-2 rounded-full ${process.documentoObservacionesLink ? 'bg-green-500' : 'bg-gray-300'}`}></div>
               </div>
-              <div className={`text-xs font-medium ${hasAllLinks ? 'text-green-600' : hasNoLinks ? 'text-yellow-600' : 'text-orange-600'}`}>
-                {hasAllLinks ? 'Completo' : hasNoLinks ? 'Pendiente' : 'Parcial'}
+              <div className="flex flex-col items-end gap-1">
+                <div className={`text-xs font-medium ${hasAllLinks ? 'text-green-600' : hasNoLinks ? 'text-yellow-600' : 'text-orange-600'}`}>
+                  {hasAllLinks ? 'Completo' : hasNoLinks ? 'Pendiente' : 'Parcial'}
+                </div>
+                {getResponsableStatusBadge()}
               </div>
             </div>
           </div>
         </DropdownMenuTrigger>
         
-        <DropdownMenuContent className="w-48 bg-white border shadow-lg">
+        <DropdownMenuContent className="w-56 bg-white border shadow-lg">
           {process.pdfLink && (
             <DropdownMenuItem 
               onClick={handlePdfClick}
@@ -106,8 +141,28 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
               <span>Figma</span>
             </DropdownMenuItem>
           )}
+
+          {process.documentoRefinadoLink && (
+            <DropdownMenuItem 
+              onClick={handleDocumentoRefinadoClick}
+              className="flex items-center gap-2 cursor-pointer hover:bg-green-50"
+            >
+              <FileCheck className="h-4 w-4 text-green-500" />
+              <span>Documento Refinado</span>
+            </DropdownMenuItem>
+          )}
+
+          {process.documentoObservacionesLink && (
+            <DropdownMenuItem 
+              onClick={handleDocumentoObservacionesClick}
+              className="flex items-center gap-2 cursor-pointer hover:bg-orange-50"
+            >
+              <MessageSquare className="h-4 w-4 text-orange-500" />
+              <span>Documento Observaciones</span>
+            </DropdownMenuItem>
+          )}
           
-          {hasNoLinks && (
+          {!process.pdfLink && !process.figmaLink && !process.documentoRefinadoLink && !process.documentoObservacionesLink && (
             <DropdownMenuItem disabled className="text-gray-400">
               <span>No hay enlaces disponibles</span>
             </DropdownMenuItem>

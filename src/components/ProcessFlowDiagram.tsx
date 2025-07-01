@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { processData } from '../data/processData';
 import ProcessPhase from './ProcessPhase';
@@ -6,6 +5,7 @@ import GeneralDiagram from './GeneralDiagram';
 import Legend from './Legend';
 import Summary from './Summary';
 import ExcludedProcesses from './ExcludedProcesses';
+import ResponsibleBreakdown from './ResponsibleBreakdown';
 import { Phase, Process } from '../types/process';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -76,6 +76,7 @@ const ProcessFlowDiagram = () => {
         </h1>
         
         <Summary />
+        <ResponsibleBreakdown />
         
         <Tabs defaultValue="main-processes" className="w-full">
           <TabsList className="grid w-full grid-cols-2 mb-6">

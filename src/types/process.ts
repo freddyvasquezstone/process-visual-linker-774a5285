@@ -4,6 +4,9 @@ export interface Process {
   name: string;
   pdfLink?: string;
   figmaLink?: string;
+  documentoRefinadoLink?: string;
+  documentoObservacionesLink?: string;
+  responsableStatus?: 'validacion-humadea' | 'validacion-stone' | 'refinado-stone';
 }
 
 export interface Phase {
