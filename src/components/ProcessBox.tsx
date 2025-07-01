@@ -106,10 +106,22 @@ const ProcessBox: React.FC<ProcessBoxProps> = ({ process, phaseId, index }) => {
             
             <div className="mt-2 flex items-center justify-between">
               <div className="flex gap-1">
-                <div className={`w-3 h-3 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`} title="Documentación PDF"></div>
-                <div className={`w-3 h-3 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`} title="Figma"></div>
-                <div className={`w-3 h-3 rounded-full ${process.documentoRefinadoLink ? 'bg-green-500' : 'bg-gray-300'}`} title="Documento Refinado"></div>
-                <div className={`w-3 h-3 rounded-full ${process.documentoObservacionesLink ? 'bg-green-500' : 'bg-gray-300'}`} title="Documento Observaciones"></div>
+                <div 
+                  className={`w-3 h-3 rounded-full ${process.pdfLink ? 'bg-green-500' : 'bg-gray-300'}`} 
+                  title="Documentación PDF"
+                ></div>
+                <div 
+                  className={`w-3 h-3 rounded-full ${process.figmaLink ? 'bg-green-500' : 'bg-gray-300'}`} 
+                  title="Figma"
+                ></div>
+                <div 
+                  className={`w-3 h-3 rounded-full ${process.documentoRefinadoLink ? 'bg-green-500' : 'bg-gray-300'}`} 
+                  title="Documento Refinado"
+                ></div>
+                <div 
+                  className={`w-3 h-3 rounded-full ${process.documentoObservacionesLink ? 'bg-green-500' : 'bg-gray-300'}`} 
+                  title="Documento Observaciones"
+                ></div>
               </div>
               <div className="flex flex-col items-end gap-1">
                 <div className={`text-xs font-medium ${hasAllLinks ? 'text-green-600' : hasNoLinks ? 'text-yellow-600' : 'text-orange-600'}`}>

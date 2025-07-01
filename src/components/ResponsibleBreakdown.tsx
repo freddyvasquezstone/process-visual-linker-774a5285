@@ -13,9 +13,30 @@ const ResponsibleBreakdown = () => {
     let validacionStone = 0;
     let refinadoStone = 0;
 
-    // Incluir TODOS los procesos, incluyendo los procesos adicionales
+    // IDs de los procesos que deben excluirse del conteo (mismos que en Summary.tsx)
+    const excludedProcessIds = [
+      'enturnamiento',
+      'seguridad-trafico',
+      'tracking-seguridad',
+      'novedades-cupo',
+      'novedades-op',
+      'novedades-liquidacion',
+      'riesgos-seguros',
+      'siniestros'
+    ];
+
     processData.forEach(phase => {
+      // Excluir las áreas de apoyo del cálculo del resumen (igual que en Summary.tsx)
+      if (phase.id === 'procesos-apoyo') {
+        return;
+      }
+      
       phase.processes.forEach((process: Process) => {
+        // Excluir los procesos específicos que van en la pestaña adicional
+        if (excludedProcessIds.includes(process.id)) {
+          return;
+        }
+
         switch (process.responsableStatus) {
           case 'validacion-humadea':
             validacionHumadea++;
@@ -45,9 +66,30 @@ const ResponsibleBreakdown = () => {
   const getProcessesByStatus = (status: string) => {
     const processes: { name: string; phase: string }[] = [];
 
-    // Incluir TODOS los procesos, incluyendo los procesos adicionales
+    // IDs de los procesos que deben excluirse del conteo (mismos que en Summary.tsx)
+    const excludedProcessIds = [
+      'enturnamiento',
+      'seguridad-trafico',
+      'tracking-seguridad',
+      'novedades-cupo',
+      'novedades-op',
+      'novedades-liquidacion',
+      'riesgos-seguros',
+      'siniestros'
+    ];
+
     processData.forEach(phase => {
+      // Excluir las áreas de apoyo del cálculo del resumen (igual que en Summary.tsx)
+      if (phase.id === 'procesos-apoyo') {
+        return;
+      }
+      
       phase.processes.forEach((process: Process) => {
+        // Excluir los procesos específicos que van en la pestaña adicional
+        if (excludedProcessIds.includes(process.id)) {
+          return;
+        }
+
         const processStatus = process.responsableStatus || 'validacion-humadea';
         if (processStatus === status) {
           processes.push({
