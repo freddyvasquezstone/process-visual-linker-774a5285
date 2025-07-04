@@ -109,7 +109,7 @@ export const processData: Phase[] = [
         figmaLink: 'https://www.figma.com/board/GtrZkRloRE7zcqm1jPN2mY/Servicio-Al-cliente-HUMADEA?node-id=0-1&p=f&t=HEICLz4ekWxwa70E-0',
         //documentoRefinadoLink: '',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/19lkY2g5STB8ZNpmrg8FJ6ClsvUBE6zN0/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-humadea'
+        responsableStatus: 'validacion-stone'
       },
       
       {
