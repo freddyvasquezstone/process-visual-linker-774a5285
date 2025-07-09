@@ -180,8 +180,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1joBTgY3N-8lT9-m3xzlXatHGnhZK_gmq/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/9w4zsTYXko8nUofbfzy69Q/Control-de-Precintos-Humadea?node-id=0-1&p=f&t=OGb8gi55LNGlanx9-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1LItAvPB-YmyPrzMngN94XTnQ5AR5vWz-/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'orden-cargue',
@@ -419,8 +419,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1pnVHdvK5NBPFY7y8E8UWWYltaYy2lNrb/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/tpVNyPGWDvJ6icqbv1PvF4/Turnpike-Humadea?node-id=0-1&p=f&t=nYhiyMbmxGPM32yA-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1KQMP8-ZJAPelp3-sK2i3crtvd7U3xpv3/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'estructura-app',
