@@ -306,7 +306,7 @@ export const processData: Phase[] = [
         figmaLink: 'https://www.figma.com/board/wlQ0QLIByXhLmYmhjOyzIw/Tracking-Seguridad---Trafico?node-id=0-1&p=f&t=jiaXEAdMx1Px0mzy-0',
         //documentoRefinadoLink: '',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/19AhBgS7Zc1gpt3MqBFuAojLEe37r2M2S/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-humadea'
+        responsableStatus: 'validacion-stone'
       }
     ]
   },
