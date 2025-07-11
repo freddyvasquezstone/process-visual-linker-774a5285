@@ -14,8 +14,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/17fhFOsycQ66PFRpenquByK2CfDsXHAIy/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/Yk7d3FBrjSF1FH5iU12L3j/Creaci%C3%B3n-de-un-Cliente-y-Activaci%C3%B3n?node-id=0-1&t=SkvrcmYqvhSetBIb-1',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1M7IEmSZwjiemux_Nflkg97a-4XnH5Pqq/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'activacion-cliente',
