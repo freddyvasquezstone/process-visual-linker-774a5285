@@ -14,7 +14,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/17fhFOsycQ66PFRpenquByK2CfDsXHAIy/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/Yk7d3FBrjSF1FH5iU12L3j/Creaci%C3%B3n-de-un-Cliente-y-Activaci%C3%B3n?node-id=0-1&t=SkvrcmYqvhSetBIb-1',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1M7IEmSZwjiemux_Nflkg97a-4XnH5Pqq/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/15SgU08BkrUpRBuLo-W-qpqu83JSdnKk1/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
@@ -23,8 +23,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/15tbYB_GmdzattnqrojWLZbB7QFO9XvIf/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/WkcZJsvTWhuAviNFOy9npL/Activaci%C3%B3n-Clientes-HUMADEA?node-id=0-1&t=DVlbYgYEO2IXOPgE-1',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/11ucziC6Ryjt_ybcMPOUB4i91s6yiU9AQ/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'asignacion-cupo',
@@ -32,8 +32,8 @@ export const processData: Phase[] = [
         pdfLink:'https://drive.google.com/file/d/1vAl_x_OcL72NYk8CHyidICMd7044ATET/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/74GfVbGmkYkrSZkvi1JrEe/Asignaci%C3%B3n-Cupo-Clientes?node-id=0-1&t=abKn3zFPwG7LXHxQ-1',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1xOAP3PmG8PCxxd13RXluQGJ_9WR59SwV/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'novedades-cupo',
@@ -41,8 +41,8 @@ export const processData: Phase[] = [
         pdfLink:'https://drive.google.com/file/d/1N-d71Hu3z428oE1bLJimWiiIQmZUeOmh/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/O30JXnUaUExEHptYRfcqTY/Novedades-Cupo-de-Cliente?node-id=0-1&p=f&t=RiMP9W5iSAtrdE3b-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1cOoaWlTyRDJII-ffScjtnQx4er_EMXCh/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       // Segunda fila - 1 elemento
       {
@@ -108,7 +108,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1sVKOouS3HANO4UgUE20LmdtoFMIKjDtt/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/GtrZkRloRE7zcqm1jPN2mY/Servicio-Al-cliente-HUMADEA?node-id=0-1&p=f&t=HEICLz4ekWxwa70E-0',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/19lkY2g5STB8ZNpmrg8FJ6ClsvUBE6zN0/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1cdZ2oB2kr3czAl9F7vD25E0rnxcGpqtd/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       
@@ -171,7 +171,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/18TMuHXG1lvkkrHYoyyuUvudWl2Ro3Wwj/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/UOqIwXpPPyB2rvRtwoEnMF/Log%C3%ADstica-Contenedores-HUMADEA?node-id=0-1&p=f&t=o7tYoLnXAhK6FCkH-0',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/12c7EhbPiZwUPrMWT_fUReqUrS-JFb_De/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1NQ2W9ZVlNsp6j-HL-tqVNOEhSEUSVnxq/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
@@ -180,7 +180,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1joBTgY3N-8lT9-m3xzlXatHGnhZK_gmq/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/9w4zsTYXko8nUofbfzy69Q/Control-de-Precintos-Humadea?node-id=0-1&p=f&t=OGb8gi55LNGlanx9-0',
         documentoRefinadoLink: 'https://drive.google.com/file/d/1leBWzWYLPL9jEue-VaskEQGJm5l3_eLF/view?usp=drive_link',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1LItAvPB-YmyPrzMngN94XTnQ5AR5vWz-/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/17ABth3OAKqW-yQtPtMPFwgu4JIndLboI/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'refinado-stone'
       },
       {
@@ -207,8 +207,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1lUDhDf9SE1lZGAB-bMUUNkzoD5q2siv-/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/NhIRrig9LAoDR8YiFT1hCu/Remesas-Humadea?node-id=0-1&p=f&t=SLMcPANSWgZCwGBh-0',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/18XsZ6Qb-itspH3miiq4Y7D_u56oHZ0py/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1LyrhsHlV5sjLyJvC6UqTV5j0-jFpeJ3N/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'manifiesto',
@@ -216,7 +216,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1gqTyuZkG3i4WrPrBfmQHmQ6whOo4LATe/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/IoYDWKlOs9CtCDAovyhyez/Manifiestos-Humadea?node-id=0-1&p=f&t=aeFhI4k2ZgsGIcNi-0',
         documentoRefinadoLink: 'https://drive.google.com/file/d/1RXOcCdM9ch3J-oOR3O5IVeICGujmyiE2/view?usp=drive_link',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1SCPXDzYTVU9ZgRoGisOm2m4OIIy3kjZh/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1rw7vMl3uuQC5H7an6HLjiCKESMklq_90/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'refinado-stone'
       },
       {
@@ -225,7 +225,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1RuSUDwQO9_AFC9c0Bjx_ceL4ZHUxRPLp/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/2PvvDR3GIsmpDbqJ8LnkeQ/Reexpedici%C3%B3n-de-Manifiestos?node-id=0-1&p=f&t=sbPa2ET0OpTbNfIr-0',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1n8dUs7AjSk4sBU256UBVdM0KqrH6ND0S/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1lDje6Qdma63jYcZHMmVqvnISoSuWCQYj/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
@@ -234,7 +234,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1vealvWO9SOOIHCdt9qJWyYAHieYuo6dc/view?usp=drive_link', 
         figmaLink: 'https://www.figma.com/board/qiGlYwHKuJPRhhZXTfdaNE/Operacion-Internacional-HUMADEA?node-id=0-1&p=f&t=fkwyPiIgBjRNmFbA-0',
         //documentoRefinadoLink: 'https://docs.google.com/document/d/1JkakljfcsmiHGPW6nrIGCnO7sHQKo_QL/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1IJ7xPw1PEhz4cjHJ5moR8MQwdcfZc5k0/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1AFT8pQxmXMpMZKhJMbMwG3CzDixIIclw/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
@@ -305,7 +305,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1_zqS7-hHL_Cd_DjDXbjEszHGp_BCmBeQ/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/wlQ0QLIByXhLmYmhjOyzIw/Tracking-Seguridad---Trafico?node-id=0-1&p=f&t=jiaXEAdMx1Px0mzy-0',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/19AhBgS7Zc1gpt3MqBFuAojLEe37r2M2S/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1BtcGWjH6ZniepBAYDihIwGRhIZyPnX6L/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       }
     ]
@@ -348,7 +348,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/14uaO8hwq-G2zL9CDwpTbBeHe80i8LgmH/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/G83RG6vhEzqrufPLrs4Mz4/Creacion-de-Anticipos-Humadea?t=vxOhhHpCZp1JY7om-0',
         documentoRefinadoLink: 'https://drive.google.com/file/d/19UIjcvNGpcjkvvEFvxPZ5PxOsr9jmCcK/view?usp=drive_link',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1Pv9G54tq9KqkcpSpXmpgkOwVwh-v-QjC/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1gFReK4ICOzdaR1HQx5qTkMyUti_oPld3/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'refinado-stone'
       },
       {
@@ -357,7 +357,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/14uaO8hwq-G2zL9CDwpTbBeHe80i8LgmH/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/G83RG6vhEzqrufPLrs4Mz4/Creacion-de-Anticipos-Humadea?t=vxOhhHpCZp1JY7om-0',
         documentoRefinadoLink: 'https://drive.google.com/file/d/19UIjcvNGpcjkvvEFvxPZ5PxOsr9jmCcK/view?usp=drive_link',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1Pv9G54tq9KqkcpSpXmpgkOwVwh-v-QjC/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1gFReK4ICOzdaR1HQx5qTkMyUti_oPld3/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'refinado-stone'
       },
       {
@@ -419,7 +419,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1pnVHdvK5NBPFY7y8E8UWWYltaYy2lNrb/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/tpVNyPGWDvJ6icqbv1PvF4/Turnpike-Humadea?node-id=0-1&p=f&t=nYhiyMbmxGPM32yA-0',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1KQMP8-ZJAPelp3-sK2i3crtvd7U3xpv3/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1D-iabeIxPb_Sz0ERh7VJ1QgoTkiD1hhI/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
