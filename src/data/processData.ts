@@ -180,7 +180,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1joBTgY3N-8lT9-m3xzlXatHGnhZK_gmq/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/9w4zsTYXko8nUofbfzy69Q/Control-de-Precintos-Humadea?node-id=0-1&p=f&t=OGb8gi55LNGlanx9-0',
         documentoRefinadoLink: 'https://drive.google.com/file/d/1leBWzWYLPL9jEue-VaskEQGJm5l3_eLF/view?usp=drive_link',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/17ABth3OAKqW-yQtPtMPFwgu4JIndLboI/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/14kfiJv-na-Vlmqc6Fx_axcDZavrZ7zt4/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'refinado-stone'
       },
       {
@@ -357,7 +357,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/14uaO8hwq-G2zL9CDwpTbBeHe80i8LgmH/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/G83RG6vhEzqrufPLrs4Mz4/Creacion-de-Anticipos-Humadea?t=vxOhhHpCZp1JY7om-0',
         documentoRefinadoLink: 'https://drive.google.com/file/d/19UIjcvNGpcjkvvEFvxPZ5PxOsr9jmCcK/view?usp=drive_link',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1gFReK4ICOzdaR1HQx5qTkMyUti_oPld3/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1gFReK4ICOzdaR1HQx5qTkMyUti_oPld3/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true ',
         responsableStatus: 'refinado-stone'
       },
       {
@@ -366,7 +366,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1A8DWOEvn2clC9HyqnIcwvn73xHmA5lzE/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/SnEm5r2rhkbvaAEViTOvWY/Cumplidos-Liquidaciones-Humadea?node-id=0-1&p=f&t=bHJughIyLoAkZC3Y-0',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1Pv9G54tq9KqkcpSpXmpgkOwVwh-v-QjC/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1m5m3CNkjxp9GZX7D8eszSZqMUK63JWBp/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
