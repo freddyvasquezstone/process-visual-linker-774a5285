@@ -286,9 +286,9 @@ export const processData: Phase[] = [
         name: 'SEGURIDAD - ANÁLISIS DE VEHÍCULOS, CONDUCTORES, PROPIETARIOS Y POSEEDORES',
         pdfLink: 'https://drive.google.com/file/d/1IfYS0ZyDnsLs4k1lfjU1b4KnHVVjivpx/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/hQeE8dzKmGoItzKi2Vutaw/An%C3%A1lisis-y-Seguridad?node-id=0-1&p=f&t=Hpy9SuGFySKbMYxk-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1IldyYlcltHgrjWykirOsqHNNe1BQHBXH/view?usp=drive_link ',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1bbWHv625FcWWOSPASW0AFITocF6xw4bt/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'seguridad-trafico',
