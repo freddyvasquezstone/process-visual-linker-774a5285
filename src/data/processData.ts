@@ -296,8 +296,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1owCaQnpG2DEkWtwbzaaNCLfhXGrIJJxQ/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/ZStCeumbdvrJmf0SfstQ83/Seguridad-y-Trafico?node-id=0-1&t=ntrVYURgfKn1Xayl-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1tr8sW7C-PlmWzTdunYVJL9ISWwFeh8Ra/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'tracking-seguridad',
