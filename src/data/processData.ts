@@ -322,7 +322,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1Lyd5bVxzz6HqbcPaV7gdSHL5PMO07h7C/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/yeUQMGsMYRK4HzkaYusITP/Seguros-Humadea?node-id=0-1&p=f&t=Fx8vFMfx4ySmmSKN-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1obmpK-my2MlyAGhTHzMPMGvTl5h6Gnhv/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-humadea'
       },
       {
@@ -410,7 +410,7 @@ export const processData: Phase[] = [
         pdfLink:'https://drive.google.com/file/d/1fA_wSubTNdfP1xX1YMNLTr4myby8CDqs/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/1shxbvHjbE9QhynH0w0Fu7/Rodamientos-Humadea?node-id=0-1&p=f&t=f6I3tXXOgSMOx3eK-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1anl8AL4tVyqsio5ssBEVDivOLrbohRG6/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-humadea'
       },
       {
