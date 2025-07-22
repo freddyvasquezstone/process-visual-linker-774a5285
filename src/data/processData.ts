@@ -13,18 +13,18 @@ export const processData: Phase[] = [
         name: 'CREACIÓN DE CLIENTES',
         pdfLink: 'https://drive.google.com/file/d/17fhFOsycQ66PFRpenquByK2CfDsXHAIy/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/Yk7d3FBrjSF1FH5iU12L3j/Creaci%C3%B3n-de-un-Cliente-y-Activaci%C3%B3n?node-id=0-1&t=SkvrcmYqvhSetBIb-1',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1vdOpQDb0TbQv3PySkCvrQ95TwOfLEohM/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/15SgU08BkrUpRBuLo-W-qpqu83JSdnKk1/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'activacion-cliente',
         name: 'ACTIVACIÓN DE CLIENTES',
         pdfLink: 'https://drive.google.com/file/d/15tbYB_GmdzattnqrojWLZbB7QFO9XvIf/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/WkcZJsvTWhuAviNFOy9npL/Activaci%C3%B3n-Clientes-HUMADEA?node-id=0-1&t=DVlbYgYEO2IXOPgE-1',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1F0Da3XDigH3O18YtFU1SqysNwuHbDV7T/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/11ucziC6Ryjt_ybcMPOUB4i91s6yiU9AQ/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'asignacion-cupo',
