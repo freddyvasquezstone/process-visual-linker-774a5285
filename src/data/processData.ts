@@ -70,7 +70,7 @@ export const processData: Phase[] = [
         pdfLink:'https://drive.google.com/file/d/1rqH5WwxX68xa3Ui1gx8A3RTqpI2kBSev/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/phaRlMnfCQfymxvGhNdzcp/L%C3%ADneas-de-Negocio-Humadea?node-id=0-1&p=f&t=4TTgukClu5oBjtHG-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1-tsfq3lpR5TFbRBRZPshrrDYJnrPt4pw/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-humadea'
       },
       {
@@ -79,7 +79,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/17P_ELAB0Q2xBlk7xv4TolH98z914aiT-/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/cPli8EvLlViIEpm28jhcq1/L%C3%ADquidos-Humadea?node-id=603-139&t=ky1rpTdB8m7Bs6Zu-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1f4qD7b2NpcteYFtZepQyrqb9dBlg2Qtp/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-humadea'
       },
       // Cuarta fila - 2 elementos (uno grande y uno amarillo para novedades)
@@ -135,7 +135,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1hX9U6sYKmxVpDQp3bEE-LRsmIUM7TKif/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/Bdc4WIArk91v49BcDsoXyD/Creaci%C3%B3n-de-un-Asociado?node-id=0-1&p=f&t=kPpSD9PrVF0Q0OFb-0',
         //documentoRefinadoLink: 'https://drive.google.com/file/d/1P5YOkRY5VowPdMVh2iTbOmslK8090c2r/view?usp=drive_link',
-        //documentoObservacionesLink: '',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1aQ74_3jpfiAQq_mmOY515Njba4Bjeda5/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
@@ -152,9 +152,9 @@ export const processData: Phase[] = [
         name: 'CREACIÓN DE VEHÍCULO',
         pdfLink: 'https://drive.google.com/file/d/19iJTZI_c3j0huuWF0HU9VcQi_Ku_SBhi/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/FexMN0ZtIh1Cp4CbV5jIOW/Creacion-de-Vehiculo?node-id=0-1&p=f&t=33efp8dlAvYMyk0w-0',
-        //documentoRefinadoLink: 'https://drive.google.com/file/d/1dexgePZ8Ch2J8lB_euXMH5we1q7R539M/view?usp=drive_link',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/19iJTZI_c3j0huuWF0HU9VcQi_Ku_SBhi/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1bVqlWRwl7nOm6HlhS2e4OzN-EMLl4NGe/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'activacion-vehiculo',
