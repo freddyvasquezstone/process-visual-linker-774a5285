@@ -152,7 +152,7 @@ export const processData: Phase[] = [
         name: 'CREACIÓN DE VEHÍCULO',
         pdfLink: 'https://drive.google.com/file/d/19iJTZI_c3j0huuWF0HU9VcQi_Ku_SBhi/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/FexMN0ZtIh1Cp4CbV5jIOW/Creacion-de-Vehiculo?node-id=0-1&p=f&t=33efp8dlAvYMyk0w-0',
-        //documentoRefinadoLink: 'https://drive.google.com/file/d/1dexgePZ8Ch2J8lB_euXMH5we1q7R539M/view?usp=drive_link',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1dexgePZ8Ch2J8lB_euXMH5we1q7R539M/view?usp=drive_link',
         //documentoObservacionesLink: '',
         responsableStatus: 'validacion-stone'
       },
