@@ -6,6 +6,7 @@ import Legend from './Legend';
 import Summary from './Summary';
 import ExcludedProcesses from './ExcludedProcesses';
 import ResponsibleBreakdown from './ResponsibleBreakdown';
+import TasksSection from './TasksSection';
 import { Phase, Process } from '../types/process';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -75,6 +76,7 @@ const ProcessFlowDiagram = () => {
                           
         </h1>
         
+        <TasksSection />
         <Summary />
         <ResponsibleBreakdown />
         
