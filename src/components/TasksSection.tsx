@@ -4,7 +4,7 @@ import { ExternalLink } from 'lucide-react';
 
 const TasksSection = () => {
   // Link configurable para las tareas pendientes
-  const tasksLink = 'https://docs.google.com/spreadsheets/d/1Qibk8C98PjjEyBm9h0eERDwBAUc4DxSF/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true'; // Cambiar por el link real
+  const tasksLink = 'https://humadea-flow.lovable.app/'; // Cambiar por el link real
 
   return (
     <div className="mb-6 p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg border border-amber-200">
