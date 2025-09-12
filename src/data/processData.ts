@@ -235,7 +235,7 @@ export const processData: Phase[] = [
         figmaLink: 'https://www.figma.com/board/qiGlYwHKuJPRhhZXTfdaNE/Operacion-Internacional-HUMADEA?node-id=0-1&p=f&t=fkwyPiIgBjRNmFbA-0',
         documentoRefinadoLink: 'https://drive.google.com/file/d/1RAtYk2slpV8AHHwX8ReZYzvakDJczqow/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1AFT8pQxmXMpMZKhJMbMwG3CzDixIIclw/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'comercio-exterior',
