@@ -304,9 +304,9 @@ export const processData: Phase[] = [
         name: 'TRAKING SEGURIDAD Y TRÁFICO',
         pdfLink: 'https://drive.google.com/file/d/1_zqS7-hHL_Cd_DjDXbjEszHGp_BCmBeQ/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/wlQ0QLIByXhLmYmhjOyzIw/Tracking-Seguridad---Trafico?node-id=0-1&p=f&t=jiaXEAdMx1Px0mzy-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1uCfjCkxVnbwjIT4LnYxArEL13k-j2rJr/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1BtcGWjH6ZniepBAYDihIwGRhIZyPnX6L/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       }
     ]
   },
@@ -365,9 +365,9 @@ export const processData: Phase[] = [
         name: 'CUMPLIDOS Y LIQUIDACIONES',
         pdfLink: 'https://drive.google.com/file/d/1A8DWOEvn2clC9HyqnIcwvn73xHmA5lzE/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/SnEm5r2rhkbvaAEViTOvWY/Cumplidos-Liquidaciones-Humadea?node-id=0-1&p=f&t=bHJughIyLoAkZC3Y-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/13nu4Wv7WpHSN0Nyib18gxb2irLKh2OLC/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1m5m3CNkjxp9GZX7D8eszSZqMUK63JWBp/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'novedades-liquidacion',
@@ -383,9 +383,9 @@ export const processData: Phase[] = [
         name: 'CARTERA TRANSPORTADOR',
         pdfLink: 'https://drive.google.com/file/d/1PoOPoLzjUBTwCUFGvKqFuaik2jgf0iAk/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/Fqm6ln3bdm714Q3ZKAkrzE/Cartera-Transportador-Humadea?node-id=5004-261&t=PKNaIYy4jP2v3O9c-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1Z8bL5PR2SJZ_NvKo9bgd526Vxwhk1y_c/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1Kf8uHvXdf77YP8enDMEEF7XkQWVpCadS/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'guia-costos',
@@ -409,18 +409,18 @@ export const processData: Phase[] = [
         name: 'RODAMIENTOS',
         pdfLink:'https://drive.google.com/file/d/1fA_wSubTNdfP1xX1YMNLTr4myby8CDqs/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/1shxbvHjbE9QhynH0w0Fu7/Rodamientos-Humadea?node-id=0-1&p=f&t=f6I3tXXOgSMOx3eK-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1xdBtdb6f9QQWEaeDWevp9anmCEZH1NJZ/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1anl8AL4tVyqsio5ssBEVDivOLrbohRG6/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'turnpike',
         name: 'TURNPIKE',
         pdfLink: 'https://drive.google.com/file/d/1pnVHdvK5NBPFY7y8E8UWWYltaYy2lNrb/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/tpVNyPGWDvJ6icqbv1PvF4/Turnpike-Humadea?node-id=0-1&p=f&t=nYhiyMbmxGPM32yA-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1HIcBBE2XbG3qbO2fHgb1S9T0oD4J2H7S/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1D-iabeIxPb_Sz0ERh7VJ1QgoTkiD1hhI/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'estructura-app',
