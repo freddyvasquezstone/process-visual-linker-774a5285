@@ -50,9 +50,9 @@ export const processData: Phase[] = [
         name: 'TARIFAS Y FLETES',
         pdfLink:'https://drive.google.com/file/d/1bMmLwkY-EN-YSeTsb29atWDab0QwgotY/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/jO92PF5KDyyW3I3l9rfrFm/Tarifas-y-Fletes-HUMADEA?node-id=0-1&p=f&t=a4hDS6VGRxNTQ2XE-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1H9E9nwlDg1-mxBs86Jrq-laX3nW_jVZK/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1RRT0XOsuRV5L5AccnoPq74PY1KQVTFQD/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       // Tercera fila - 3 elementos
       {
@@ -144,7 +144,7 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/12rUQY-YVWv1-KUxWWgpgowYqA10RBD9v/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/dsVuiJid3C4MIuo0iCRq8F/Enturnamiento---HUMAEDA?node-id=7-2246&t=hhrXbVoLnWJacgRS-0',
         //documentoRefinadoLink: '',
-        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1y9S2q7xyxZk2afQVUgHom1b5ozjSr7Vn/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1xEym7Q0n7ppPsprHYK54XTeM5ehaRKtq/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
       {
