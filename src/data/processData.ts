@@ -101,7 +101,7 @@ export const processData: Phase[] = [
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1AHiJoFr40xvJyoLutZSSVKtlaMtiSGXE/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'validacion-stone'
       },
-      // Quinta fila - 2 elementos
+      // Quinta fila - 2 elementos  
       {
         id: 'servicio-cliente',
         name: 'SERVICIO AL CLIENTE',
