@@ -53,7 +53,25 @@ const ExcludedProcesses = () => {
         name: 'SINIESTROS',
         pdfLink: 'https://drive.google.com/file/d/1BveLteIHxoJhiUNVp8gK847yJkQFPcB_/view?usp=drive_link',
         figmaLink:'https://www.figma.com/board/7fYrPn1eY54FZdUISWH8oA/Siniestros-HUMADEA?t=AUH7kEKBSItw6lRB-0'
-      }
+      },
+      {
+        id: 'estructura-app',
+        name: 'ESTRUCTURA APP',
+        pdfLink: 'https://drive.google.com/file/d/1mPe5amfvhF1OOo9Z0qR4DHaRb8QD03_f/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/qLHim6TIvac6glqikYUWkC/Estructuraci%C3%B3n-APP-HUMADEA?node-id=0-1&p=f&t=RGTmKkea9OOvD07X-0',
+        //documentoRefinadoLink: '',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1y9S2q7xyxZk2afQVUgHom1b5ozjSr7Vn/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
+      },
+      {
+        id: 'servicio-cliente',
+        name: 'SERVICIO AL CLIENTE',
+        pdfLink: 'https://drive.google.com/file/d/1sVKOouS3HANO4UgUE20LmdtoFMIKjDtt/view?usp=drive_link',
+        figmaLink: 'https://www.figma.com/board/GtrZkRloRE7zcqm1jPN2mY/Servicio-Al-cliente-HUMADEA?node-id=0-1&p=f&t=HEICLz4ekWxwa70E-0',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1h4ZoRLJiEmOHu0ArTMDPYrgIQWAJkRBQ/view?usp=drive_link',
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1cdZ2oB2kr3czAl9F7vD25E0rnxcGpqtd/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'refinado-stone'
+      },
   ];
 
   return (
