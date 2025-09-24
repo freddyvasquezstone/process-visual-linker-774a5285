@@ -197,9 +197,9 @@ export const processData: Phase[] = [
         name: 'ORDEN DE RETIRO',
         pdfLink: 'https://drive.google.com/file/d/1VFuSfgfb-t8m7P_0RGsC172ns1i_acNg/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/DN8xLmqoSZUlw6fujz0zFy/Orden-de-Retiro-Humadea?node-id=0-1&p=f&t=5ntyJd0EFwPV6ZFi-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1Rt7LZyuXb2RUx5qE-JHQUzou56tWJIv2/view?usp=drive_link',
         //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'remesa',
