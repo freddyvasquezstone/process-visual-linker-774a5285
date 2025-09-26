@@ -270,8 +270,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/19yP_G5wfFqOul4W0r7sKWpXvwqKB7_36/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/tOFkC2Jr5u1fPkzm0PgqI3/Traking-Operativo?node-id=0-1&p=f&t=oPSW6CNuEsvoj1RL-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1bWTvIF88xQIN32UbUi7do0Q6Z-st2a56/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       }
     ]
   },
