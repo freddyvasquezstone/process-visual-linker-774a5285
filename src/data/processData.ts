@@ -118,8 +118,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1jNQxJ0exP-scMXSpIbjsPwF3UDPSPWoZ/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/TGOina1BTCGigymBxoV0I6/Tracking-Comercial-HUMADEA?node-id=0-1&p=f&t=ZC1Ha9JmjqZ695ay-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1bWTvIF88xQIN32UbUi7do0Q6Z-st2a56/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       }
     ]
   },
@@ -252,8 +252,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1GdBQluqDkYN3a9Y3ONECmmbf8WeFjnUI/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/uMmXFv6auprW0ibxTt6VVD/Documento-DO-HUMADEA?t=po9j0GyVhKEBibHT-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1_n56qHf4tj06HjT_-UAAloEibGfqLHym/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'aprobacion-do',
@@ -261,8 +261,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1oV3akVytaF98_Sq3hgq3hhXOU6niWsEq/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/6nZdF1pHRd7J5hHMm8CUTb/Aprobaci%C3%B3n-Documento-DO?node-id=0-1&p=f&t=bA1JHKJ0BxLeKRIF-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1_n56qHf4tj06HjT_-UAAloEibGfqLHym/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'tracking-operativo',
@@ -393,8 +393,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1wr4mELXV71xCOZN62dUrU8hYskdlAhw3/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/u5Lc4QMvrGl1c2KOopQ8oe/Gu%C3%ADa-de-Costos-Operacionales?node-id=0-1&p=f&t=DdjoSo1c5xYlQcUI-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/16JCwl9KwxexKUcFNYzy77n44sMYUbW8_/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       }
     ]
   },
