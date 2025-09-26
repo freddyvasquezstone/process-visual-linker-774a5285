@@ -50,7 +50,7 @@ export const processData: Phase[] = [
         name: 'TARIFAS Y FLETES',
         pdfLink:'https://drive.google.com/file/d/1bMmLwkY-EN-YSeTsb29atWDab0QwgotY/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/jO92PF5KDyyW3I3l9rfrFm/Tarifas-y-Fletes-HUMADEA?node-id=0-1&p=f&t=a4hDS6VGRxNTQ2XE-0',
-        documentoRefinadoLink: 'https://drive.google.com/file/d/1H9E9nwlDg1-mxBs86Jrq-laX3nW_jVZK/view?usp=drive_link',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1svbzoHSS_KQa97OOapXfDOQ7XAGfP0le/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1RRT0XOsuRV5L5AccnoPq74PY1KQVTFQD/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'refinado-stone'
       },
@@ -134,7 +134,7 @@ export const processData: Phase[] = [
         name: 'CREACIÓN DE ASOCIADOS, CONDUCTORES Y POSEEDORES',
         pdfLink: 'https://drive.google.com/file/d/1hX9U6sYKmxVpDQp3bEE-LRsmIUM7TKif/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/Bdc4WIArk91v49BcDsoXyD/Creaci%C3%B3n-de-un-Asociado?node-id=0-1&p=f&t=kPpSD9PrVF0Q0OFb-0',
-        documentoRefinadoLink: 'https://drive.google.com/file/d/1P5YOkRY5VowPdMVh2iTbOmslK8090c2r/view?usp=drive_link',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1as8DrNw4uvMrx8CxReyaXsUZWb1WVQzZ/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1aQ74_3jpfiAQq_mmOY515Njba4Bjeda5/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
         responsableStatus: 'refinado-stone'
       },
@@ -197,7 +197,7 @@ export const processData: Phase[] = [
         name: 'ORDEN DE RETIRO',
         pdfLink: 'https://drive.google.com/file/d/1VFuSfgfb-t8m7P_0RGsC172ns1i_acNg/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/DN8xLmqoSZUlw6fujz0zFy/Orden-de-Retiro-Humadea?node-id=0-1&p=f&t=5ntyJd0EFwPV6ZFi-0',
-        documentoRefinadoLink: 'https://drive.google.com/file/d/1Rt7LZyuXb2RUx5qE-JHQUzou56tWJIv2/view?usp=drive_link',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1trfWqrYYMAJv9W4kCZugZAmai39dvf3B/view?usp=drive_link',
         //documentoObservacionesLink: '',
         responsableStatus: 'refinado-stone'
       },
