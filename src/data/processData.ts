@@ -260,9 +260,9 @@ export const processData: Phase[] = [
         name: 'APROBACIÓN D.O',
         pdfLink: 'https://drive.google.com/file/d/1oV3akVytaF98_Sq3hgq3hhXOU6niWsEq/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/6nZdF1pHRd7J5hHMm8CUTb/Aprobaci%C3%B3n-Documento-DO?node-id=0-1&p=f&t=bA1JHKJ0BxLeKRIF-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/12WbVEn-NnDA4PUl8X337Scs4Gj_0ZBFh/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1_n56qHf4tj06HjT_-UAAloEibGfqLHym/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'tracking-operativo',
