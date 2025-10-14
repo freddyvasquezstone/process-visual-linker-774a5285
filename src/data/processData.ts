@@ -251,9 +251,9 @@ export const processData: Phase[] = [
         name: 'CREACIÓN D.O',
         pdfLink: 'https://drive.google.com/file/d/1GdBQluqDkYN3a9Y3ONECmmbf8WeFjnUI/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/uMmXFv6auprW0ibxTt6VVD/Documento-DO-HUMADEA?t=po9j0GyVhKEBibHT-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1Os2pvusYsRO3ahzlmW6ZPquotX8KLX58/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1_n56qHf4tj06HjT_-UAAloEibGfqLHym/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'aprobacion-do',
@@ -375,8 +375,8 @@ export const processData: Phase[] = [
         pdfLink: 'https://drive.google.com/file/d/1dpQE5zrsin8ahjzEFDJQoLT7Gd1n9Ee8/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/SY4Nm8QW4zSpVIC8CaSj1p/Novedades-de-Liquidaci%C3%B3n-y-Cumplidos-HUMADEA?node-id=0-1&p=f&t=RvjDniWYrWYMl10e-0',
         //documentoRefinadoLink: '',
-        //documentoObservacionesLink: '',
-        responsableStatus: 'validacion-humadea'
+        documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1VGr1Fn59sApjLbcmqrLPb1kONSmvNIBX/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
+        responsableStatus: 'validacion-stone'
       },
       {
         id: 'cartera-transportador',
@@ -392,9 +392,9 @@ export const processData: Phase[] = [
         name: 'GUÍA DE COSTOS OPERACIONALES',
         pdfLink: 'https://drive.google.com/file/d/1wr4mELXV71xCOZN62dUrU8hYskdlAhw3/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/u5Lc4QMvrGl1c2KOopQ8oe/Gu%C3%ADa-de-Costos-Operacionales?node-id=0-1&p=f&t=DdjoSo1c5xYlQcUI-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/12vc1Q8r5y0jp4yOGQZ7U5ZKDOBU-0jJB/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/16JCwl9KwxexKUcFNYzy77n44sMYUbW8_/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       }
     ]
   },
@@ -427,9 +427,9 @@ export const processData: Phase[] = [
         name: 'ESTRUCTURA APP',
         pdfLink: 'https://drive.google.com/file/d/1mPe5amfvhF1OOo9Z0qR4DHaRb8QD03_f/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/qLHim6TIvac6glqikYUWkC/Estructuraci%C3%B3n-APP-HUMADEA?node-id=0-1&p=f&t=RGTmKkea9OOvD07X-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1y-LycV4wQ_8NiTOZ3xdRmCnJBk6hZaqA/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1y9S2q7xyxZk2afQVUgHom1b5ozjSr7Vn/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       }
     ]
   },
