@@ -117,9 +117,9 @@ export const processData: Phase[] = [
         name: 'TRAKING COMERCIAL',
         pdfLink: 'https://drive.google.com/file/d/1jNQxJ0exP-scMXSpIbjsPwF3UDPSPWoZ/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/TGOina1BTCGigymBxoV0I6/Tracking-Comercial-HUMADEA?node-id=0-1&p=f&t=ZC1Ha9JmjqZ695ay-0',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1DrSGG7cnGu6D4kphtv7UUmn8hCLmtELx/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1bWTvIF88xQIN32UbUi7do0Q6Z-st2a56/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       }
     ]
   },
