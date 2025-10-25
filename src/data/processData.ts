@@ -88,9 +88,9 @@ export const processData: Phase[] = [
         name: 'CREACIÓN OP REFRIGERADOS, MERCANCÍAS PELIGROSAS, RORO, EXTRADIMENSIONADA',
         pdfLink: 'https://drive.google.com/file/d/16A5rBzWamUa2fdy2OCt10u4EmPh7qANY/view?usp=drive_link',
         figmaLink: 'https://www.figma.com/board/uLKom2kYlZ7X4duAeOUf6y/Creaci%C3%B3n-Orden-de-Producci%C3%B3n-HUMADEA?node-id=0-1&t=gpnhuL9ZwkxTa8EP-1',
-        //documentoRefinadoLink: '',
+        documentoRefinadoLink: 'https://drive.google.com/file/d/1rG8VM82lppdw3MDa8EGXuvMHR9Sr8MiG/view?usp=drive_link',
         documentoObservacionesLink: 'https://docs.google.com/spreadsheets/d/1fhchK2iu47hVLNOJBxF0uoGfxD2MwUXs/edit?usp=drive_link&ouid=115478075634609640734&rtpof=true&sd=true',
-        responsableStatus: 'validacion-stone'
+        responsableStatus: 'refinado-stone'
       },
       {
         id: 'novedades-op',
